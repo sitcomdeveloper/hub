@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="69px" height="55px" viewBox="0 0 69 55" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-1">
+            <stop stop-color="#F5515F" offset="0%"></stop>
+            <stop stop-color="#9F041B" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Share-Pass-Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="-Share-Pass" transform="translate(-856.000000, -2319.000000)">
+            <g id="DISCOVERY" transform="translate(0.000000, 1992.000000)">
+                <g id="Passes-Comparison" transform="translate(200.000000, 327.000000)">
+                    <g id="Share-Pass-3" transform="translate(508.000000, 0.000000)">
+                        <g id="Pass">
+                            <g id="Group-6" transform="translate(148.000000, 0.000000)">
+                                <polygon id="Badge-Back" fill="#A50920" points="7.69168657 1.77635684e-13 0 9.23076923 68.3000031 10 60.3811621 0"></polygon>
+                                <polygon id="Badge-Front" fill="url(#linearGradient-1)" points="8 0 60.5768596 0 60.5768596 55 34.2884298 38.2380952 8 55"></polygon>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

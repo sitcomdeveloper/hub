@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="71px" height="70px" viewBox="0 0 71 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>ola_money</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-34" transform="translate(-28.090909, -29.000000)">
+            <g id="Group-15">
+                <g id="ola_money" transform="translate(29.000000, 29.000000)">
+                    <path d="M35,70 C54.3297624,70 70,54.3297624 70,35 C70,15.6702376 54.3297624,0 35,0 C15.6702376,0 0,15.6702376 0,35 C0,54.3297624 15.6702376,70 35,70" id="back" fill="#368641"></path>
+                    <g id="icon" transform="translate(10.500000, 21.000000)">
+                        <g id="forward" transform="translate(7.970705, 0.258654)" fill="#83BC4B">
+                            <polyline id="Fill-5" points="17.8446574 2.09390259 9.89314211 27.214413 1.06165909 27.214413 9.01184916 2.09390259 17.8446574 2.09390259"></polyline>
+                            <polyline id="Fill-9" points="33.4998659 2.09390259 25.5483505 27.214413 16.7168675 27.214413 24.6683828 2.09390259 33.4998659 2.09390259"></polyline>
+                        </g>
+                        <g id="backward" transform="translate(0.970705, 0.258654)" fill="#FFFFFF">
+                            <polyline id="Fill-10" points="0.115444779 2.09390259 8.0669601 27.214413 16.8997684 27.214413 8.94825305 2.09390259 0.115444779 2.09390259"></polyline>
+                            <polyline id="Fill-11" points="16.1244956 2.09390259 24.076011 27.214413 32.907494 27.214413 24.9573039 2.09390259 16.1244956 2.09390259"></polyline>
+                            <polyline id="Fill-12" points="32.1083667 2.09390259 40.059882 27.214413 48.891365 27.214413 40.941175 2.09390259 32.1083667 2.09390259"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

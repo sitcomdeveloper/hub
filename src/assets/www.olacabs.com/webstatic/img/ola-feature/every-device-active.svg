@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="71px" height="70px" viewBox="0 0 71 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-31" transform="translate(-28.909091, -29.000000)">
+            <g id="Group-5">
+                <g id="Group-2" transform="translate(29.000000, 29.000000)">
+                    <circle id="back" fill="#D4DB28" cx="35" cy="35" r="35"></circle>
+                    <g id="Group-6" transform="translate(13.000000, 22.000000)" stroke="#FFFFFF">
+                        <rect id="Rectangle" stroke-width="0.8" fill="#FFFFFF" x="5.03238004" y="0.10981466" width="33.3024779" height="23.7182389" rx="1.45799984"></rect>
+                        <path d="M0.434322026,23.2385622 C0.434322026,22.9674979 0.644263478,22.7477569 0.914626659,22.7477569 L42.7220126,22.7477569 C42.9872775,22.7477569 43.2023172,22.9742739 43.2023172,23.2385622 L43.2023172,23.7066605 C43.2023172,23.9777248 43.0012713,24.2558518 42.7329644,24.3337711 L39.8267885,25.1777566 L4.161909,25.1777566 L0.906423492,24.3216203 C0.645689052,24.2530517 0.434322026,23.9709488 0.434322026,23.7066605 L0.434322026,23.2385622 Z" id="Rectangle-2" stroke-width="0.8" fill="#FFFFFF"></path>
+                        <rect id="Rectangle-3" stroke-width="0.5" fill="#D4DB28" x="7.23832126" y="2.33575919" width="29.1599967" height="18.3656741" rx="0.485999945"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

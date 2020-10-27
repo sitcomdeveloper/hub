@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="34px" height="16px" viewBox="0 0 34 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 45.1 (43504) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 6</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="-116.927083%" x2="50%" y2="161.08631%" id="linearGradient-1">
+            <stop stop-color="#53B900" offset="0%"></stop>
+            <stop stop-color="#004F14" offset="100%"></stop>
+        </linearGradient>
+        <path d="M3.30432402,4.44633229 C3.30395139,4.41971994 3.30728719,4.39550299 3.31493541,4.37424503 C3.67872682,3.36309966 4.63213769,2.64154195 5.7510241,2.64154195 C6.97457581,2.64154195 8.00024545,3.5044087 8.27337888,4.66525383 L8.30369142,4.66387473 C8.57731244,3.50372537 9.6026542,2.64154195 10.8257213,2.64154195 C11.967733,2.64154195 12.9373583,3.39323432 13.2836073,4.43730764 L13.3756991,4.43311781 C13.7377023,3.41849926 14.6928328,2.69378703 15.8141624,2.69378703 C17.1148005,2.69378703 18.1918371,3.66880372 18.3790414,4.94031326 C20.0692087,4.93990054 21.2859872,4.93560078 21.2859872,4.93560078 C21.2859872,4.93560078 18.838225,1.15611281 18.5481827,0.768752664 C18.2581404,0.381392518 19.6160071,0.370190108 19.7863878,0.467765709 L24.0375515,4.93560075 C24.32584,4.97185768 27.9261573,5.39354702 29.702629,6.09182417 C30.5889644,6.44021573 31.284635,7.46677144 31.4382889,8.31359158 C31.5926017,9.16404321 31.4382889,9.45298313 31.4382889,9.45298313 C31.4382889,9.45298313 32.0007577,11.161356 31.4382889,11.161356 C30.8758201,11.161356 28.6259441,11.1613557 28.6259449,11.161356 L28.3210914,11.161356 C28.0477355,12.210245 27.1042438,12.9836066 25.9823407,12.9836066 C24.8604375,12.9836066 23.9169458,12.210245 23.64359,11.161356 L9.22108672,11.161356 C8.94773086,12.210245 8.00423916,12.9836066 6.882336,12.9836066 C5.76043284,12.9836066 4.81694114,12.210245 4.54358529,11.161356 L4.43978524,11.161356 C4.43978524,11.161356 1.60507059,11.0414667 1.04972763,10.686977 C0.494384665,10.3324873 -0.394561584,9.21790837 0.193289974,8.3135918 C0.621863691,8.22455068 0.610210298,8.02724795 0.720830302,7.75400565 C0.720830297,6.39430338 0.761747602,4.82036789 1.04972769,4.82036789 C1.16760526,4.82036789 2.28304205,4.59582164 3.30432402,4.44633229 Z M15.8141624,2.69378703 C15.0979362,2.69378703 14.5173202,2.10245772 14.5173202,1.37301606 C14.5173202,0.643574389 15.0979362,0.0522450813 15.8141624,0.0522450813 C16.5303885,0.0522450813 17.1110045,0.643574389 17.1110045,1.37301606 C17.1110045,2.10245772 16.5303885,2.69378703 15.8141624,2.69378703 Z M10.8257213,2.64154195 C10.1094952,2.64154195 9.52887918,2.05021264 9.52887918,1.32077097 C9.52887918,0.591329307 10.1094952,0 10.8257213,0 C11.5419475,0 12.1225635,0.591329307 12.1225635,1.32077097 C12.1225635,2.05021264 11.5419475,2.64154195 10.8257213,2.64154195 Z M5.7510241,2.64154195 C5.03479796,2.64154195 4.45418195,2.05021264 4.45418195,1.32077097 C4.45418195,0.591329307 5.03479796,0 5.7510241,0 C6.46725024,0 7.04786624,0.591329307 7.04786624,1.32077097 C7.04786624,2.05021264 6.46725024,2.64154195 5.7510241,2.64154195 Z" id="path-2"></path>
+        <filter x="-6.3%" y="-7.7%" width="112.6%" height="130.8%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="0.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 1   0 0 0 0 1   0 0 0 0 1  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <filter x="-6.3%" y="-7.7%" width="112.6%" height="130.8%" filterUnits="objectBoundingBox" id="filter-4">
+            <feGaussianBlur stdDeviation="0.5" in="SourceAlpha" result="shadowBlurInner1"></feGaussianBlur>
+            <feOffset dx="0" dy="1" in="shadowBlurInner1" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.5 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Share-Pass-Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="-Share-Pass" transform="translate(-934.000000, -2408.000000)">
+            <g id="DISCOVERY" transform="translate(0.000000, 1992.000000)">
+                <g id="Passes-Comparison" transform="translate(200.000000, 338.000000)">
+                    <g id="Share-Pass-3" transform="translate(508.000000, 0.000000)">
+                        <g id="Pass">
+                            <g id="Share-Pass" transform="translate(13.000000, 49.000000)">
+                                <g id="share-icon" transform="translate(214.229508, 29.639344)">
+                                    <g id="Group-6">
+                                        <g id="Combined-Shape">
+                                            <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                                            <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                                            <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-2"></use>
+                                        </g>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

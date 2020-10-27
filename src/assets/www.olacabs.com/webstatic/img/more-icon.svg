@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="4px" height="17px" viewBox="0 0 4 17" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 41.2 (35397) - http://www.bohemiancoding.com/sketch -->
+    <title>search copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="V2-Final" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1.1.-R&amp;M" transform="translate(-330.000000, -43.000000)">
+            <g id="search-copy" transform="translate(320.000000, 40.000000)">
+                <polygon id="Shape" transform="translate(12.000000, 11.865169) scale(1, -1) translate(-12.000000, -11.865169) " points="24 0 0 0 0 23.7303371 24 23.7303371"></polygon>
+                <path d="M12,7.91011236 C13.1045695,7.91011236 14,7.02474288 14,5.93258427 C14,4.84042566 13.1045695,3.95505618 12,3.95505618 C10.8954305,3.95505618 10,4.84042566 10,5.93258427 C10,7.02474288 10.8954305,7.91011236 12,7.91011236 Z M12,13.8426966 C13.1045695,13.8426966 14,12.9573271 14,11.8651685 C14,10.7730099 13.1045695,9.88764045 12,9.88764045 C10.8954305,9.88764045 10,10.7730099 10,11.8651685 C10,12.9573271 10.8954305,13.8426966 12,13.8426966 Z M12,19.7752809 C13.1045695,19.7752809 14,18.8899114 14,17.7977528 C14,16.7055942 13.1045695,15.8202247 12,15.8202247 C10.8954305,15.8202247 10,16.7055942 10,17.7977528 C10,18.8899114 10.8954305,19.7752809 12,19.7752809 Z" id="more-2" fill="#818487"></path>
+            </g>
+        </g>
+    </g>
+</svg>

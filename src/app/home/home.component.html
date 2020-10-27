@@ -1,0 +1,12 @@
+<app-header></app-header>
+<p>home works!</p>
+<router-outlet></router-outlet>
+<a routerLink="home" (click)="ciytaxi()">CityTaxi</a>
+<a routerLink="home" (click)="oustation()">Outstation</a>
+<div *ngIf = citytaxi>
+
+  <app-citytaxi></app-citytaxi>
+</div>
+<div *ngIf = outstation>
+<app-outstation></app-outstation>
+</div>

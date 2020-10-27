@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="69px" height="69px" viewBox="0 0 69 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 22</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M34,68 C52.7776815,68 68,52.7776815 68,34 C68,15.2223185 52.7776815,0 34,0 C15.2223185,0 0,15.2223185 0,34 C0,52.7776815 15.2223185,68 34,68 Z" id="path-1"></path>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="100%" id="linearGradient-3">
+            <stop stop-color="#FFFFFF" offset="0%"></stop>
+            <stop stop-color="#F9F9F9" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-36" transform="translate(-36.545455, -30.000000)">
+            <g id="Group-21" transform="translate(6.089459, 0.000000)">
+                <g id="Group-22" transform="translate(30.000000, 30.000000)">
+                    <g id="Group" transform="translate(0.600000, 0.574705)">
+                        <mask id="mask-2" fill="white">
+                            <use xlink:href="#path-1"></use>
+                        </mask>
+                        <use id="Oval-3-Copy-3" fill="#D4DB28" xlink:href="#path-1"></use>
+                    </g>
+                    <path d="M44.3304688,24.9301739 L40.0726563,24.9301739 C40.7367221,25.9067412 41.1664053,27.0525631 41.3617188,28.3676739 L45.3070313,28.3676739 L44.3304688,31.9223614 L41.38125,31.9223614 C41.0947902,34.0708096 40.2354238,35.7146734 38.803125,36.854002 C37.3708262,37.9933306 35.3461068,38.6736623 32.7289063,38.8950176 L41.8304688,49.5395489 L41.8304688,49.7934551 L36.225,49.7934551 L26.2835938,38.2114239 L26.2640625,35.2231426 L31.2054688,35.2231426 C32.6638094,35.2231426 33.8193968,34.9204113 34.6722656,34.3149395 C35.5251345,33.7094677 36.0947902,32.9119496 36.38125,31.9223614 L25.8734375,31.9223614 L26.8695313,28.3676739 L36.303125,28.3676739 C35.665101,26.3494346 33.9398578,25.3403301 31.1273438,25.3403301 L25.8734375,25.3403301 L26.928125,21.3559551 L45.3265625,21.3559551 L44.3304688,24.9301739 Z" id="₹" fill="url(#linearGradient-3)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

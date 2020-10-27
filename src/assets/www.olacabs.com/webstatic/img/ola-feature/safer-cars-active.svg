@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="71px" height="70px" viewBox="0 0 71 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>tick</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-30" transform="translate(-28.181818, -29.000000)">
+            <g id="Group-8">
+                <g id="tick" transform="translate(29.152566, 29.000000)">
+                    <circle id="back" fill="#D4DB28" cx="35" cy="35" r="35"></circle>
+                    <path d="M24.9375,36.0889338 L49.0520909,36.0889338 L49.0520909,40.4639338 L20.5660615,40.4639338 L20.5660615,38.7625 L20.5625,38.7625 L20.5625,23.8 L24.9375,23.8 L24.9375,36.0889338 Z" stroke="#FFFFFF" stroke-width="1.5" fill="#FFFFFF" stroke-linecap="round" stroke-linejoin="round" transform="translate(34.807295, 32.131967) rotate(-45.000000) translate(-34.807295, -32.131967) "></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="69px" height="69px" viewBox="0 0 69 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Group Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="30" height="22" rx="3"></rect>
+        <rect id="path-2" x="21" y="8.5" width="11" height="8" rx="2"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-38" transform="translate(-28.000000, -30.000000)">
+            <g id="Group-27" transform="translate(0.089459, 0.000000)">
+                <g id="Group-Copy" transform="translate(28.800000, 30.574705)">
+                    <path d="M34,68 C52.7776815,68 68,52.7776815 68,34 C68,15.2223185 52.7776815,0 34,0 C15.2223185,0 0,15.2223185 0,34 C0,52.7776815 15.2223185,68 34,68 Z" id="Detail-Disclosure" fill="#D4DB28"></path>
+                    <g id="Group-19" transform="translate(19.000000, 23.000000)">
+                        <g id="Rectangle-9-Copy">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <rect stroke="#FFFFFF" stroke-width="1" x="0.5" y="0.5" width="29" height="21" rx="3"></rect>
+                        </g>
+                        <g id="Rectangle-10">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-2"></use>
+                            <rect stroke="#D4DB28" stroke-width="1" x="21.5" y="9" width="10" height="7" rx="2"></rect>
+                        </g>
+                        <circle id="Oval-5" stroke="#D4DB28" fill="#D4DB28" cx="26" cy="12.5" r="1"></circle>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

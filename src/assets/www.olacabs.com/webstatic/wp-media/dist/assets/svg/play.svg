@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="60px" height="60px" viewBox="0 0 60 60" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.3 (29802) - http://www.bohemiancoding.com/sketch -->
+    <title>pay_2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <path d="M27,0 C12.06,0 0,12.06 0,27 C0,41.94 12.06,54 27,54 C41.94,54 54,41.94 54,27 C54,12.06 41.94,0 27,0 L27,0 Z M27,48 C15.443787,48 6,38.6183432 6,27 C6,15.3816568 15.443787,6 27,6 C38.556213,6 48,15.443787 48,27 C48,38.556213 38.556213,48 27,48 L27,48 Z" id="path-1"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.197576993 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <path d="M37.98,25.56 L22.8,16.68 C21.66,16.02 20.28,16.86 20.28,18.12 L20.28,35.88 C20.28,37.2 21.72,37.98 22.8,37.32 L38.04,28.44 C39.12,27.78 39.12,26.22 37.98,25.56 L37.98,25.56 Z" id="path-3"></path>
+        <filter x="-50%" y="-50%" width="200%" height="200%" filterUnits="objectBoundingBox" id="filter-4">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="1" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.197576993 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="pay_2">
+            <g id="Group" transform="translate(3.000000, 0.000000)">
+                <g id="Shape">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                </g>
+                <path d="M27,48 C15.443787,48 6,38.6183432 6,27 C6,15.3816568 15.443787,6 27,6 C38.556213,6 48,15.443787 48,27 C48,38.556213 38.556213,48 27,48 L27,48 Z" id="Path" fill="#000000" opacity="0.5"></path>
+                <g id="Shape">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-4)" xlink:href="#path-3"></use>
+                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-3"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

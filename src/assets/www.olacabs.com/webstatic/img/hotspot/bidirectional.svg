@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="14px" height="19px" viewBox="0 0 14 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 44.1 (41455) - http://www.bohemiancoding.com/sketch -->
+    <title>ic_swap_vert_black_24px</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Discovery-Widget" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="SELECTED-PICKUP---SELECTED-DROP" transform="translate(-499.000000, -253.000000)">
+            <g id="DISCOVER">
+                <g id="Widget" transform="translate(150.000000, 40.000000)">
+                    <g id="Pickup" transform="translate(20.000000, 195.000000)">
+                        <g id="ic_swap_vert_black_24px" transform="translate(323.000000, 14.000000)">
+                            <path d="M17.0666667,18.3433333 L17.0666667,11.3333333 L15.0666667,11.3333333 L15.0666667,18.3433333 L12.0666667,18.3433333 L16.0666667,22.3333333 L20.0666667,18.3433333 L17.0666667,18.3433333 L17.0666667,18.3433333 Z M10.0666667,4.33333333 L6.06666667,8.32333333 L9.06666667,8.32333333 L9.06666667,15.3333333 L11.0666667,15.3333333 L11.0666667,8.32333333 L14.0666667,8.32333333 L10.0666667,4.33333333 Z" id="Shape" fill="#929292" fill-rule="nonzero"></path>
+                            <polygon id="Shape" points="0 0 26 0 26 26 0 26"></polygon>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

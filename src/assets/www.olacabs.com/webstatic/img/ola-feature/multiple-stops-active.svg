@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="69px" height="69px" viewBox="0 0 69 69" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Group Copy 4</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0.454794613" width="19.4400003" height="42.8559394" rx="9.72000013"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-38-Copy-2" transform="translate(-28.000000, -30.000000)">
+            <g id="Group-27" transform="translate(0.089459, 0.000000)">
+                <g id="Group-24">
+                    <g id="Group-Copy-4" transform="translate(28.800000, 30.574705)">
+                        <g id="Group-25">
+                            <path d="M34,68 C52.7776815,68 68,52.7776815 68,34 C68,15.2223185 52.7776815,0 34,0 C15.2223185,0 0,15.2223185 0,34 C0,52.7776815 15.2223185,68 34,68 Z" id="Detail-Disclosure" fill="#D4DB28"></path>
+                            <g id="Group-Copy-6" transform="translate(24.100000, 11.950001)">
+                                <g id="Rectangle-Copy">
+                                    <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                                    <rect stroke="#D4DB28" stroke-width="0.719999981" x="0.35999999" y="0.814794603" width="18.7200003" height="42.1359394" rx="9.36000014"></rect>
+                                </g>
+                                <rect id="Rectangle-Copy-2" stroke="#D4DB28" stroke-width="0.5" x="2.19400026" y="2.84759209" width="15.0520002" height="38.0703444" rx="7.5260001"></rect>
+                                <circle id="Oval" stroke="#D4DB28" stroke-width="1.34999996" fill="#FFFFFF" cx="9.72000013" cy="10.156091" r="4.86000006"></circle>
+                                <circle id="Oval-Copy" stroke="#D4DB28" stroke-width="1.34999996" fill="#FFFFFF" cx="9.72000013" cy="21.9690002" r="4.86000006"></circle>
+                                <circle id="Oval-Copy-2" stroke="#D4DB28" stroke-width="1.34999996" fill="#FFFFFF" cx="9.72000013" cy="33.7819094" r="4.86000006"></circle>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

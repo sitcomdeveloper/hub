@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="71px" height="70px" viewBox="0 0 71 70" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 43.1 (39012) - http://www.bohemiancoding.com/sketch -->
+    <title>Group 13</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="9.90000021" width="22.0000005" height="28.6000006" rx="2.20000005"></rect>
+        <filter x="-4.5%" y="-3.5%" width="109.1%" height="107.0%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="-2" dy="2" in="SourceAlpha" result="shadowOffsetInner1"></feOffset>
+            <feComposite in="shadowOffsetInner1" in2="SourceAlpha" operator="arithmetic" k2="-1" k3="1" result="shadowInnerInner1"></feComposite>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.0831634964 0" type="matrix" in="shadowInnerInner1"></feColorMatrix>
+        </filter>
+        <path d="M4.4000001,34.0977052 C4.4000001,32.8839465 5.39214551,31.9000007 6.60938336,31.9000007 L15.3906171,31.9000007 C16.6108258,31.9000007 17.6000004,32.8880874 17.6000004,34.0977052 L17.6000004,38.5000008 L4.4000001,38.5000008 L4.4000001,34.0977052 Z" id="path-3"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-32" transform="translate(-28.636364, -29.000000)">
+            <g id="Group-10">
+                <g id="Group-13" transform="translate(29.000000, 29.000000)">
+                    <ellipse id="Oval-2" fill="#D4DB28" cx="35" cy="35" rx="35" ry="35"></ellipse>
+                    <g id="Group-11" transform="translate(24.000000, 14.650000)">
+                        <path d="M2.99664481,38.2533561 C2.99664481,39.3321644 3.87119177,40.2067114 4.95000011,40.2067114 L4.95000011,40.2067114 C6.02880845,40.2067114 6.9033554,39.3321644 6.9033554,38.2533561" id="Oval" fill="#1F1F1F"></path>
+                        <path d="M15.0966451,38.2533561 C15.0966451,39.3321644 15.971192,40.2067114 17.0500004,40.2067114 L17.0500004,40.2067114 C18.1288087,40.2067114 19.0033557,39.3321644 19.0033557,38.2533561" id="Oval-Copy" fill="#1F1F1F"></path>
+                        <g id="Rectangle-5">
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <rect stroke="#FFFFFF" stroke-width="0.8" x="0.4" y="10.3000002" width="21.2000005" height="27.8000006" rx="2.20000005"></rect>
+                        </g>
+                        <g id="Rectangle-7">
+                            <use fill="#F4F3F3" fill-rule="evenodd" xlink:href="#path-3"></use>
+                            <path stroke="#D4DB28" stroke-width="0.5" d="M17.3500004,38.2500008 L4.6500001,38.2500008 L4.6500001,34.0977052 C4.6500001,33.0233871 5.52884329,32.1500007 6.60938336,32.1500007 L15.3906171,32.1500007 C16.4715421,32.1500007 17.3500004,33.0249528 17.3500004,34.0977052 L17.3500004,38.2500008 Z"></path>
+                        </g>
+                        <rect id="Rectangle-6" stroke="#1F1F1F" stroke-width="0.8" x="8.10000017" y="0.998233891" width="5.80000014" height="8.50176632"></rect>
+                        <path d="M4.4000001,0.994075479 L17.6000004,0.994075479" id="Line" stroke="#1F1F1F" stroke-width="0.8" stroke-linecap="round"></path>
+                        <path d="M5.50000012,26.8400006 L16.5000004,26.8400006" id="Line" stroke="#D4DB28" stroke-width="0.880000019" stroke-linecap="round"></path>
+                        <rect id="Rectangle-8" fill="#D4DB28" transform="translate(7.150000, 18.150000) rotate(-40.000000) translate(-7.150000, -18.150000) " x="4.4000001" y="16.5000004" width="5.50000012" height="3.30000007"></rect>
+                        <rect id="Rectangle-8-Copy" fill="#D4DB28" transform="translate(14.316712, 15.208987) rotate(10.000000) translate(-14.316712, -15.208987) " x="12.1167117" y="14.1089873" width="4.4000001" height="2.20000005"></rect>
+                        <rect id="Rectangle-8-Copy-2" fill="#D4DB28" transform="translate(14.316712, 20.708987) rotate(10.000000) translate(-14.316712, -20.708987) " x="12.1167117" y="19.6089874" width="4.4000001" height="2.20000005"></rect>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
