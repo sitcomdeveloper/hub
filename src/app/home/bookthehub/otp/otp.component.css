@@ -1,0 +1,49 @@
+/* Body Styling only start */
+body {
+  text-align: center;
+  background-color: lightcyan;
+  font-family: 'POPPINS', Open-Sans;
+  background: linear-gradient(to right, #4568dc, #b06ab3);
+}
+::selection {
+  color: #8e44ad;
+}
+/* Body Styling only end */
+section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* width: 100vw; */
+  height: 50vh;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+section form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: auto;
+  margin: 0 auto;
+}
+section form input {
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  margin-right: 25px;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 5px;
+}
+section form input:last-child {
+  margin-right: 0;
+}
+section form input::-webkit-inner-spin-button, section form input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+section form input:focus, section form input.focus {
+  border-color: green;
+  outline: none;
+  box-shadow: none;
+}

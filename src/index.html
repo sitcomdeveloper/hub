@@ -10,14 +10,14 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
-  <script src="assets/www.olacabs.com/webstatic/js/jquery-3.2.1.min.js"></script>
+  <!-- <script src="assets/www.olacabs.com/webstatic/js/jquery-3.2.1.min.js"></script>
 <script src="assets/www.olacabs.com/webstatic/js/landing-main.js"></script>
 <script src="assets/www.olacabs.com/webstatic/js/routes.js"></script>
 <script src="assets/www.olacabs.com/webstatic/js/send-events.js"></script>
 <script src="assets/www.olacabs.com/webstatic/js/seo.js"></script>
 <script src="assets/www.olacabs.com/webstatic/js/share-pass.js"></script>
 <script src="assets/www.olacabs.com/webstatic/js/share.js"></script>
-<script src="assets/www.olacabs.com/webstatic/js/slick.js"></script>
+<script src="assets/www.olacabs.com/webstatic/js/slick.js"></script> -->
 <link rel="stylesheet" href="assets/www.olacabs.com/webstatic/css/bootstrap.css"/>
 <link rel="stylesheet" href="assets/www.olacabs.com/webstatic/css/express.css"/>
 <link rel="stylesheet" href="assets/www.olacabs.com/webstatic/css/flat-fare-zones.css"/>
@@ -30,5 +30,36 @@
 </head>
 <body>
   <app-root>Loading...</app-root>
+  <!-- adding only one number in otp field -->
+  <!-- <script type="">
+    function getCodeBoxElement(index) {
+      return document.getElementById('codeBox' + index);
+    }
+    function onKeyUpEvent(index, event) {
+      const eventCode = event.which || event.keyCode;
+      if (getCodeBoxElement(index).value.length === 1) {
+       if (index !== 4) {
+        getCodeBoxElement(index+ 1).focus();
+       } else {
+        getCodeBoxElement(index).blur();
+        // Submit code
+        console.log('submit code ');
+       }
+      }
+      if (eventCode === 8 && index !== 1) {
+       getCodeBoxElement(index - 1).focus();
+      }
+    }
+    function onFocusEvent(index) {
+      for (item = 1; item < index; item++) {
+       const currentElement = getCodeBoxElement(item);
+       if (!currentElement.value) {
+          currentElement.focus();
+          break;
+       }
+      }
+    }
+  }
+  </script> -->
 </body>
 </html>

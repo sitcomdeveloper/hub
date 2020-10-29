@@ -9,16 +9,24 @@ import { Router } from '@angular/router';
 export class HomeComponent implements OnInit {
   citytaxi = true;
   outstation = false;
+  rntls = false;
   constructor(private router: Router) { }
 
   ngOnInit(): void {
   }
   ciytaxi() {
-this.citytaxi = true;
-this.outstation = false
+    this.citytaxi = true;
+    this.outstation = false;
+    this.rntls = false;
   }
   oustation() {
     this.citytaxi = false;
-this.outstation = true
+    this.outstation = true;
+    this.rntls = false;
+  }
+  rentals() {
+    this.citytaxi = false;
+    this.outstation = false;
+    this.rntls = true;
   }
 }

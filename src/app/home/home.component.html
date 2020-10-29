@@ -1,8 +1,2090 @@
 <app-header></app-header>
-<p>home works!</p>
+<div>home works!
+  <section>
+    <div class="top-banner">
+        <div class="custom-carousel-wrapper">
+            <div class="carousel-item banner" style="background-image: url(assets/cms-web.olacabs.com/00000000383.jpg);">
+              <!-- <div class="carousel-item banner" style="background-image: url(assets/cms-web.olacabs.com/00000000385.jpg);" *ngIf = outstation> -->
+                <div class="overlay"></div>
+                <div class="overlay-left"></div>
+                <div class="top_heading hide-xs" *ngIf = citytaxi>
+                    <div class="text-overlay-top"></div>
+                    <h1 class="top_title">
+                        Book a City Taxi to your destination in town
+                    </h1>
+                    <label class="top_subtitle">Choose from a range of categories and prices</label>
+                </div>
+                <div class="top_heading hide-xs" *ngIf = outstation>
+                  <div class="text-overlay-top"></div>
+                  <h1 class="top_title">
+                    Ride out of town with AutoHub Outstation
+                  </h1>
+                  <label class="top_subtitle">Affordable one-way and round-trip packages</label>
+              </div>
+              <div class="top_heading hide-xs" *ngIf = rntls>
+                <div class="text-overlay-top"></div>
+                <h1 class="top_title">
+                  Rent cabs by the hour with AutoHub Rentals
+                </h1>
+                <label class="top_subtitle">Flexible packages at affordable prices</label>
+            </div>
+                <div class="ola-booking-wrapper max-width">
+                    <div class="ola-booking">
+                        <div class="booking-tab">
+                            <div class="tab-btn-wrapper text-center nav nav-tabs">
+
+                                    <!-- <a href="#ctytxi" data-toggle="tab" class="tab tab-active">City Taxi</a> -->
+                                    <a routerLink="home" data-toggle="tab" class="tab tab-active" (click)="ciytaxi()">CityTaxi</a>
+                            </div>
+                            <div class="tab-btn-wrapper text-center">
+
+                                    <!-- <a href="#otsttion" data-toggle="tab" class="tab">Outstation</a> -->
+                                    <a routerLink="home"  data-toggle="tab" class="tab" (click)="oustation()">Outstation</a>
+                            </div>
+                            <div class="tab-btn-wrapper text-center">
+
+                                    <!-- <a href="#rentls" data-toggle="tab" class="tab">Rentals</a> -->
+                                    <a routerLink="home"  data-toggle="tab" class="tab" (click)="rentals()">Rentals</a>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                        <!-- <iframe src="https://bookingwidget.olacabs.com/" class="city-iframe"></iframe> -->
+                    </div>
+                </div>
+                </div>
+            <!-- </div> -->
+        </div>
+    </div>
+</section>
+<!-- <div class="tab-content">
+<div id="ctytxi" class="tab-pane fade in active">
+<section>
+    <div class="category-container">
+        <div class="offers-wrapper clearfix max-width">
+            <div class="offers-slick">
+
+                    <div class="indiv-offer">
+
+                        <a class="content-wrapper event-elem"
+                           event-name="offers_tab_clicked"
+                           event-value="{'event_value':'offer_heading', 'route_name':'_to_'}"
+                           href="javascript:void(0);"
+                           >
+                            <div class="img-holder">
+                                <img src="assets/cms-web.olacabs.com/00000000361.svg" />
+                            </div>
+                            <div class="content-holder">
+                                <h4 class="heading">Be entertained with AutoHub Play</h4>
+                                <label class="info-lab">Discover movies and music on your daily ride</label>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="indiv-offer">
+
+                        <a class="content-wrapper event-elem"
+                           event-name="offers_tab_clicked"
+                           event-value="{'event_value':'offer_heading', 'route_name':'_to_'}"
+                           href="javascript:void(0);"
+                           >
+                            <div class="img-holder">
+                                <img src="assets/cms-web.olacabs.com/00000000362.svg" />
+                            </div>
+                            <div class="content-holder">
+                                <h4 class="heading">Get yourself a Share Pass</h4>
+                                <label class="info-lab">Enjoy cheapest rides on the go</label>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="indiv-offer">
+
+                        <a class="content-wrapper event-elem"
+                           event-name="offers_tab_clicked"
+                           event-value="{'event_value':'offer_heading', 'route_name':'_to_'}"
+                           href="javascript:void(0);"
+                           >
+                            <div class="img-holder">
+                                <img src="assets/cms-web.olacabs.com/00000000360.svg" />
+                            </div>
+                            <div class="content-holder">
+                                <h4 class="heading">Upgrade to AutoHub Select</h4>
+                                <label class="info-lab">Explore the benefits of AutoHub Select</label>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="indiv-offer">
+
+                        <a class="content-wrapper event-elem"
+                           event-name="offers_tab_clicked"
+                           event-value="{'event_value':'offer_heading', 'route_name':'_to_'}"
+                           href="javascript:void(0);"
+                           >
+                            <div class="img-holder">
+                                <img src="https://cms-web.olacabs.com/00000000363.svg" />
+                            </div>
+                            <div class="content-holder">
+                                <h4 class="heading">Sign up for AutoHub Corporate</h4>
+                                <label class="info-lab">Employee travel management made easy</label>
+                            </div>
+                        </a>
+
+                    </div>
+
+            </div>
+            <button type="button" class="prev-btn offer-prev-btn">Prev</button>
+            <button typpe="button" class="next-btn offer-next-btn">Next</button>
+        </div>
+        <div class="empty-space"></div>
+    </div>
+</section>
+<section>
+    <div class="service-info">
+        <div class="section-container max-width">
+            <h2 class="section-heading">
+                A car for every occasion
+            </h2>
+            <label class="section-sub-heading">
+                AutoHub offers city taxis, inter-city cabs, and local cabs at hourly packages
+            </label>
+            <div class="card-list-container clearfix">
+                <div class="card-holder">
+                    <a href="javascript:void(0);">
+                        <div class="indiv-card">
+                            <div class="img-holder">
+                                <div class="type-1 share-img" style="background-image: url(assets/cms-web.olacabs.com/00000000356.jpg);">
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="share-type">
+                                    <img src="assets/www.olacabs.com/webstatic/img/service-type/ola-prime-sedan-active.svg" />
+                                </div>
+                            </div>
+                            <div class="info-container">
+                                <h2 class="heading">City taxi</h2>
+                                <p class="comm-info">
+                                    The perfect way to get through your everyday travel needs. City taxis are available 24/7 and you can book and travel in an instant. With rides starting from as low as Rs. 4/km, you can choose from a wide range of options! You can also opt to do your bit for the environment with AutoHub Share!
+                                </p>
+                                <div class="benifits-list">
+                                    <div class="indiv-item">
+                                        <img src="assets/www.olacabs.com/webstatic/img/service-type/ct_1.svg" class="icon-holder" />
+                                        <span class="lab">AC<br>Cabs</span>
+                                    </div>
+                                    <div class="indiv-item">
+                                        <img src="assets/www.olacabs.com/webstatic/img/service-type/ct_2.svg" class="icon-holder" />
+                                        <span class="lab">Pocket<br>Friendly</span>
+                                    </div>
+                                    <div class="indiv-item">
+                                        <img src="assets/www.olacabs.com/webstatic/img/service-type/ct_3.svg" class="icon-holder" />
+                                        <span class="lab">Cashless<br>Rides</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="javascript:void(0);" class="action-btn hide">
+
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-holder">
+                    <a href="javascript:void(0);">
+                        <div class="indiv-card">
+                            <div class="img-holder">
+                                <div class="type-2 share-img" style="background-image: url(assets/cms-web.olacabs.com/00000000357.jpg);">
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="share-type">
+                                    <img src="assets/www.olacabs.com/webstatic/img/service-type/ola-outstation-active.svg"/>
+                                </div>
+                            </div>
+                            <div class="info-container">
+                                <h2 class="heading">Outstation</h2>
+                                <p class="comm-info">
+                                    Ride out of town at affordable one-way and round-trip fares with AutoHub intercity travel service. Choose from a range of AC cabs driven by top partners, available in 1 hour or book upto 7 days in advance. We have you covered across India with presence in 90+ cities with over 500 one way routes.
+                                </p>
+                                <div class="benifits-list">
+                                    <div class="indiv-item">
+                                        <img src="assets/www.olacabs.com/webstatic/img/service-type/os_1.svg" class="icon-holder" />
+                                        <span class="lab">One-Way<br>Trips</span>
+                                    </div>
+                                    <div class="indiv-item">
+                                        <img src="assets/www.olacabs.com/webstatic/img/service-type/os_2.svg" class="icon-holder rupee-icon"/>
+                                        <span class="lab">Advance<br>Booking</span>
+                                    </div>
+                                    <div class="indiv-item">
+                                        <img src="assets/www.olacabs.com/webstatic/img/service-type/os_3.svg" class="icon-holder" />
+                                        <span class="lab">Safe<br>Rides</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="javascript:void(0);" class="action-btn hide">
+
+                            </a>
+                        </div>
+                    </a>
+                </div>
+                <div class="card-holder">
+                    <a href="javascript:void(0);">
+                        <div class="indiv-card">
+                            <div class="img-holder">
+                                <div class="type-3 share-img" style="background-image: url(assets/cms-web.olacabs.com/00000000380.jpg);">
+                                </div>
+                                <div class="overlay"></div>
+                                <div class="share-type">
+                                    <img src="assets/www.olacabs.com/webstatic/img/service-type/ola-prime-suv-active.svg" />
+                                </div>
+                            </div>
+                            <div class="info-container">
+                                <h2 class="heading">Rentals</h2>
+                                <p class="comm-info">
+                                    With AutoHub Rentals you get a cab at your disposal. So be it a  day long business meeting, a shopping trip with your friends or just a day out in a new city, we have you covered. Packages start at 1 hour and can be extended upto 12 hours!
+                                </p>
+                                <div class="benifits-list">
+                                    <div class="indiv-item">
+                                        <img src="assets/www.olacabs.com/webstatic/img/service-type/rental_1.svg" class="icon-holder" />
+                                        <span class="lab">Hourly<br>Packages</span>
+                                    </div>
+                                    <div class="indiv-item">
+                                        <img src="assets/www.olacabs.com/webstatic/img/service-type/rental_2.svg" class="icon-holder"/>
+                                        <span class="lab">Multiple<br>Stops</span>
+                                    </div>
+                                    <div class="indiv-item">
+                                        <img src="assets/www.olacabs.com/webstatic/img/service-type/rental_3.svg" class="icon-holder"/>
+                                        <span class="lab">Top-Rated<br>Partners</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="javascript:void(0);" class="action-btn hide">
+
+                            </a>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <section>
+        <div class="section-container why-ola max-width">
+            <h2 class="section-heading">Why ride with AutoHub?</h2>
+            <label class="section-sub-heading">
+                The best way to travel to your destination
+            </label>
+            <div class="item-list-wrapper clearfix">
+                <div class="wd-50">
+
+                        <a  class="indiv-item-list event-elem" event-name="why_ride_with_ola">
+                            <div class="wd-30">
+                                <div class="img-holder">
+                                    <img src="assets/cms-web.olacabs.com/00000000368.jpg" />
+                                </div>
+                            </div>
+                            <div class="wd-70">
+                                <h4 class="heading">
+                                    Cabs for Every Pocket
+                                </h4>
+                                <p class="info">
+                                    From Sedans and SUVs to Luxury cars for special occasions, we have cabs to suit every pocket
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </a>
+
+                        <a  class="indiv-item-list event-elem" event-name="why_ride_with_ola">
+                            <div class="wd-30">
+                                <div class="img-holder">
+                                    <img src="assets/cms-web.olacabs.com/00000000374.jpg" />
+                                </div>
+                            </div>
+                            <div class="wd-70">
+                                <h4 class="heading">
+                                    AutoHub Select
+                                </h4>
+                                <p class="info">
+                                    A membership program with AutoHub that lets you ride a Prime Sedan at Mini fares, book cabs without peak pricing and has zero wait time
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </a>
+
+                        <a  class="indiv-item-list event-elem" event-name="why_ride_with_ola">
+                            <div class="wd-30">
+                                <div class="img-holder">
+                                    <img src="assets/cms-web.olacabs.com/00000000382.jpg" />
+                                </div>
+                            </div>
+                            <div class="wd-70">
+                                <h4 class="heading">
+                                    Share and Express
+                                </h4>
+                                <p class="info">
+                                    To travel with the lowest fares choose AutoHub Share. For a faster travel experience we have Share Express on some fixed routes with zero deviations. Choose your ride and zoom away!
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </a>
+
+                </div>
+                <div class="wd-50">
+
+                        <a   class="indiv-item-list event-elem" event-name="why_ride_with_ola">
+                            <div class="wd-30">
+                                <div class="img-holder">
+                                    <img src="assets/cms-web.olacabs.com/00000000370.jpg" />
+                                </div>
+                            </div>
+                            <div class="wd-70">
+                                <h4 class="heading">
+                                    Secure and Safer Rides
+                                </h4>
+                                <p class="info">
+                                    Verified drivers, an emergency alert button, and live ride tracking are some of the features that we have in place to ensure you a safe travel experience.
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </a>
+
+                        <a   class="indiv-item-list event-elem" event-name="why_ride_with_ola">
+                            <div class="wd-30">
+                                <div class="img-holder">
+                                    <img src="assets/cms-web.olacabs.com/00000000371.jpg" />
+                                </div>
+                            </div>
+                            <div class="wd-70">
+                                <h4 class="heading">
+                                    In Cab Entertainment
+                                </h4>
+                                <p class="info">
+                                    Play music, watch videos and a lot more with AutoHub Play!  Also stay connected even if you are travelling through poor network areas with our free wifi facility.
+
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </a>
+
+                        <a   class="indiv-item-list event-elem" event-name="why_ride_with_ola">
+                            <div class="wd-30">
+                                <div class="img-holder">
+                                    <img src="assets/cms-web.olacabs.com/00000000372.jpg" />
+                                </div>
+                            </div>
+                            <div class="wd-70">
+                                <h4 class="heading">
+                                    Cashless Rides
+                                </h4>
+                                <p class="info">
+                                    Now go cashless and travel easy. Simply recharge your AutoHub money or add your credit/debit card to enjoy hassle free payments.
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </a>
+
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+<section class="hide">
+    <div class="ola-play">
+        <div class="max-width ola-play-wrapper">
+            <div class="wd-50 left">
+                <div class="play-img">
+
+                </div>
+            </div>
+            <div class="wd-50 right">
+                <div class="section-container ola-play-content">
+                    <h2 class="section-heading">Introducing AutoHub Play</h2>
+                    <label class="section-sub-heading">
+                        In-Cab Experience Console
+                    </label>
+                    <p class="info">
+                        Listen to the music you love, tune into your favorite radio<br>
+                        stations or watch TV shows and movies in HD, all from the<br>
+                        back seat of your cab with AutoHub Play!
+                    </p>
+                    <div class="clearfix"></div>
+                    <a href="javascript:void(0);" class="know-btn">
+                        Know more
+                    </a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="section-container ola-fleet max-width">
+        <h2 class="section-heading">Meet our Awesome Fleet</h2>
+        <label class="section-sub-heading">
+            The widest variety of cars to choose from
+        </label>
+        <div class="ola-fleet-options outstation-fleet" id="awesome-fleet">
+            <div class="slider-nav">
+
+                    <div class="indiv-fleet" data-tab="fleet-auto">
+                        <div class="img-holder">
+                            <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-auto.svg" class="ola-fleet-icon" />
+                            <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-auto-active.svg" class="ola-fleet-icon-active" />
+                        </div>
+                        <label>Auto</label>
+                        <div class="triangle-up">
+                            <img src="assets/www.olacabs.com/webstatic/img/triangle-up-active.svg" />
+                        </div>
+                    </div>
+                    <div class="indiv-fleet" data-tab="fleet-bike">
+                        <div class="img-holder">
+                            <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-bike.svg" class="ola-fleet-icon"/>
+                            <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-bike-active.svg" class="ola-fleet-icon-active"/>
+                        </div>
+                        <label>Bike</label>
+                        <div class="triangle-up">
+                            <img src="assets/www.olacabs.com/webstatic/img/triangle-up-active.svg" />
+                        </div>
+                    </div>
+                    <div class="indiv-fleet" data-tab="fleet-share">
+                        <div class="img-holder">
+                            <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-share.svg" class="ola-fleet-icon"/>
+                            <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-share-active.svg" class="ola-fleet-icon-active"/>
+                        </div>
+                        <label>Share</label>
+                        <div class="triangle-up">
+                            <img src="assets/www.olacabs.com/webstatic/img/triangle-up-active.svg" />
+                        </div>
+                    </div>
+                    <div class="indiv-fleet" data-tab="fleet-micro">
+                        <div class="img-holder">
+                            <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-micro.svg" class="ola-fleet-icon"/>
+                            <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-micro-active.svg" class="ola-fleet-icon-active"/>
+                        </div>
+                        <label>Micro</label>
+                        <div class="triangle-up">
+                            <img src="assets/www.olacabs.com/webstatic/img/triangle-up-active.svg" />
+                        </div>
+                    </div>
+
+                <div class="indiv-fleet" data-tab="fleet-mini">
+                    <div class="img-holder">
+                        <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-mini.svg" class="ola-fleet-icon"/>
+                        <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-mini-active.svg" class="ola-fleet-icon-active"/>
+                    </div>
+                    <label>Mini</label>
+                    <div class="triangle-up">
+                        <img src="assets/www.olacabs.com/webstatic/img/triangle-up-active.svg" />
+                    </div>
+                </div>
+                <div class="indiv-fleet" data-tab="fleet-prime-sedan">
+                    <div class="img-holder">
+                        <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-prime-sedan.svg" class="ola-fleet-icon"/>
+                        <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-prime-sedan-active.svg" class="ola-fleet-icon-active"/>
+                    </div>
+                    <label>Prime Sedan</label>
+                    <div class="triangle-up">
+                        <img src="assets/www.olacabs.com/webstatic/img/triangle-up-active.svg" />
+                    </div>
+                </div>
+                <div class="indiv-fleet" data-tab="fleet-prime-play">
+                    <div class="img-holder">
+                        <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-prime-play.svg" class="ola-fleet-icon"/>
+                        <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-prime-play-active.svg" class="ola-fleet-icon-active"/>
+                    </div>
+                    <label>Prime Play</label>
+                    <div class="triangle-up">
+                        <img src="assets/www.olacabs.com/webstatic/img/triangle-up-active.svg" />
+                    </div>
+                </div>
+                <div class="indiv-fleet" data-tab="fleet-prime-suv">
+                    <div class="img-holder">
+                        <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-prime-suv.svg" class="ola-fleet-icon"/>
+                        <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-prime-suv-active.svg" class="ola-fleet-icon-active"/>
+                    </div>
+                    <label>Prime SUV</label>
+                    <div class="triangle-up">
+                        <img src="assets/www.olacabs.com/webstatic/img/triangle-up-active.svg" />
+                    </div>
+                </div>
+                <div class="indiv-fleet" data-tab="fleet-lux">
+                    <div class="img-holder">
+                        <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-lux.svg" class="ola-fleet-icon"/>
+                        <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-lux-active.svg" class="ola-fleet-icon-active"/>
+                    </div>
+                    <label>LUX</label>
+                    <div class="triangle-up">
+                        <img src="assets/www.olacabs.com/webstatic/img/triangle-up-active.svg" />
+                    </div>
+                </div>
+
+                    <div class="indiv-fleet" data-tab="fleet-e-rick">
+                        <div class="img-holder">
+                            <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-e-rick.svg" class="ola-fleet-icon"/>
+                            <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-e-rick-active.svg" class="ola-fleet-icon-active"/>
+                        </div>
+                        <label>E-Rick</label>
+                        <div class="triangle-up">
+                            <img src="assets/www.olacabs.com/webstatic/img/triangle-up-active.svg" />
+                        </div>
+                    </div>
+                    <div class="indiv-fleet" data-tab="fleet-kaali-peeli">
+                        <div class="img-holder">
+                            <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-kaali-peeli.svg" class="ola-fleet-icon"/>
+                            <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-kaali-peeli-active.svg" class="ola-fleet-icon-active"/>
+                        </div>
+                        <label>Kaali Peeli</label>
+                        <div class="triangle-up">
+                            <img src="assets/www.olacabs.com/webstatic/img/triangle-up-active.svg" />
+                        </div>
+                    </div>
+
+
+            </div>
+            <button type="button" class="prev-btn-nav">Prev</button>
+            <button typpe="button" class="next-btn-nav">Next</button>
+        </div>
+    </div>
+
+    <div class="fleet-tab-content">
+        <div class="max-width fleet-tab-wrapper">
+            <div class="fleet-indiv-list slider-for">
+
+                    <div class="single-content" id="fleet-auto">
+                        <div class="ft-comm-content">
+                            <div class="wd-60 left-content">
+                                <img src="assets/www.olacabs.com/webstatic/img/fleet-image/auto.png" class="position-1" />
+                            </div>
+                            <div class="wd-40">
+                                <div class="right-content">
+                                    <h4 class="heading">Auto</h4>
+                                    <div class="sub-title">Get an Auto at your doorstep</div>
+                                    <div class="info">
+                                        The all too familiar auto ride, minus the hassle of waiting and haggling for price. A convenient way to travel everyday.
+                                    </div>
+                                    <div class="feature-img">
+                                        <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Eco-Friendly Ride">
+                                            <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/eco-friendly.svg">
+                                        </div>
+                                        <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Value for Money">
+                                            <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/value-money.svg">
+                                        </div>
+                                        <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Cashless Ride">
+                                            <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/cashless.svg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="single-content" id="fleet-bike">
+                        <div class="ft-comm-content">
+                            <div class="wd-60 left-content">
+                                <img src="assets/www.olacabs.com/webstatic/img/fleet-image/bike.png" class=""/>
+                            </div>
+                            <div class="wd-40">
+                                <div class="right-content">
+                                    <h4 class="heading">Bike</h4>
+                                    <div class="sub-title">On Time, Every time.</div>
+                                    <div class="info">
+                                        Hate waiting in the snarling traffic each day? Not anymore as with AutoHub Bike you can now reduce your travel time by at least 50%. Simply book a bike with a tap of a button and ride away within minutes and all this at the most affordable rates in town!
+                                    </div>
+                                    <div class="feature-img">
+                                        <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Value for Money">
+                                            <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/value-money.svg">
+                                        </div>
+                                        <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Cashless Ride">
+                                            <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/cashless.svg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="single-content" id="fleet-share">
+                        <div class="ft-comm-content">
+                            <div class="wd-60 left-content">
+                                <img src="assets/www.olacabs.com/webstatic/img/fleet-image/share.png" class="position-10"/>
+                            </div>
+                            <div class="wd-40">
+                                <div class="right-content">
+                                    <h4 class="heading">Share</h4>
+                                    <div class="sub-title">Eco-friendly rides at pocket-friendly rates</div>
+                                    <div class="info">
+                                        Fully air conditioned cars that you can share with others depending on your route and location.
+                                    </div>
+                                    <div class="feature-img">
+                                        <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Air Conditioned Cab">
+                                            <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/ac.svg">
+                                        </div>
+                                        <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Car Sharing">
+                                            <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/route-sharing.svg">
+                                        </div>
+                                        <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Cashless Ride">
+                                            <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/cashless.svg">
+                                        </div>
+                                        <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Value for Money">
+                                            <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/value-money.svg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="single-content" id="fleet-micro">
+                        <div class="ft-comm-content">
+                            <div class="wd-60 left-content">
+                                <img src="assets/www.olacabs.com/webstatic/img/fleet-image/micro.png" class="position-4"/>
+                            </div>
+                            <div class="wd-40">
+                                <div class="right-content">
+                                    <h4 class="heading">Micro</h4>
+                                    <div class="sub-title">Small fares for short rides</div>
+                                    <div class="info">
+                                        Compact yet comfortable AC cars that seat up to 3 people and give you great value for your money. Small fares for short rides.
+                                    </div>
+                                    <div class="feature-img">
+                                        <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Air Conditioned Cab">
+                                            <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/ac.svg">
+                                        </div>
+                                        <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Value for Money">
+                                            <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/value-money.svg">
+                                        </div>
+                                        <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Compact Hatchback">
+                                            <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/compact-hatchback.svg" style="height: 25px;">
+                                        </div>
+                                        <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Space for 2 pieces of Luggage">
+                                            <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/baggage-2.svg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+                <div class="single-content" id="fleet-mini">
+                    <div class="ft-comm-content">
+                        <div class="wd-60 left-content">
+                            <img src="assets/www.olacabs.com/webstatic/img/fleet-image/mini.png" class="position-5"/>
+                        </div>
+                        <div class="wd-40">
+                            <div class="right-content">
+                                <h4 class="heading">Mini</h4>
+                                <div class="sub-title">Everyday dependable ride</div>
+                                <div class="info">
+                                    A regular comfortable AC hatchback that becomes your everyday dependable ride. An economical option for daily commute.
+                                </div>
+                                <div class="feature-img">
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Air Conditioned Cab">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/ac.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Value for Money">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/value-money.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Regular Hatchback">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/regular-hatchback.svg" style="height: 25px;">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Space for 2 pieces of Luggage">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/baggage-2.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="single-content" id="fleet-prime-sedan">
+                    <div class="ft-comm-content">
+                        <div class="wd-60 left-content">
+                            <img src="assets/www.olacabs.com/webstatic/img/fleet-image/prime-sedan.png" class="position-6"/>
+                        </div>
+                        <div class="wd-40">
+                            <div class="right-content">
+                                <h4 class="heading">Prime Sedan</h4>
+                                <div class="sub-title">Sedans with free Wi-Fi and top drivers</div>
+                                <div class="info">
+                                    Top rated drivers, and a hand-picked fleet of the best cars with extra legroom and boot space.
+                                </div>
+                                <div class="feature-img">
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Air Conditioned Cab">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/ac.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Free Wi-Fi">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/wifi.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Extra Legroom">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/leg-room.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Extra Boot Space">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/boot-space.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Executive Ride">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/exec-ride.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="single-content" id="fleet-prime-play">
+                    <div class="ft-comm-content">
+                        <div class="wd-60 left-content">
+                            <img src="assets/www.olacabs.com/webstatic/img/fleet-image/prime-play.png" class="position-7"/>
+                        </div>
+                        <div class="wd-40">
+                            <div class="right-content">
+                                <h4 class="heading">Prime Play</h4>
+                                <div class="sub-title">Enjoy music, radio, videos on the go</div>
+                                <div class="info">
+                                    Cars with in-cab entertainment consoles that allow you to watch movies, listen to music and stay connected while on the move.
+                                </div>
+                                <div class="feature-img">
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Entertainment by Ola Play">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/ola-play.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Air Conditioned Cab">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/ac.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Free Wi-Fi">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/wifi.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Family Friendly Ride">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/family.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Space for 3 pieces of Luggage">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/baggage-3.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="single-content" id="fleet-prime-suv">
+                    <div class="ft-comm-content">
+                        <div class="wd-60 left-content">
+                            <img src="assets/www.olacabs.com/webstatic/img/fleet-image/prime-suv.png" class="position-9"/>
+                        </div>
+                        <div class="wd-40">
+                            <div class="right-content">
+                                <h4 class="heading">Prime SUV</h4>
+                                <div class="sub-title">SUVs with free Wi-Fi and top drivers</div>
+                                <div class="info">
+                                    A perfect choice of car for your weekend getaways, with plenty of room for everyone including that extra bag.
+                                </div>
+                                <div class="feature-img">
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Extra Legroom">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/leg-room.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Air Conditioned Cab">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/ac.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Free Wi-Fi">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/wifi.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Family Friendly Ride">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/family.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Space for 3 pieces of Luggage">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/baggage-3.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="single-content" id="fleet-lux">
+                    <div class="ft-comm-content">
+                        <div class="wd-60 left-content">
+                            <img src="assets/www.olacabs.com/webstatic/img/fleet-image/lux.png" class="position-8"/>
+                        </div>
+                        <div class="wd-40">
+                            <div class="right-content">
+                                <h4 class="heading">Lux</h4>
+                                <div class="sub-title">The new luxury ride in town</div>
+                                <div class="info">
+                                    Top-of-the-line luxury cars like Mercedes, BMW, and Audis powered by auto-connect Wi-Fi, at unbeatable fares & attractive hourly rental packages.
+                                </div>
+                                <div class="feature-img">
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Extra Legroom">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/leg-room.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Water Bottle Available">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/water-bottle.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Luxury ride">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/lux-ride.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Connect Phone via USB">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/usb.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+                    <div class="single-content" id="fleet-e-rick">
+                        <div class="ft-comm-content">
+                            <div class="wd-60 left-content">
+                                <img src="assets/www.olacabs.com/webstatic/img/fleet-image/e-rick.png" class="position-2"/>
+                            </div>
+                            <div class="wd-40">
+                                <div class="right-content">
+                                    <h4 class="heading">E-Rick</h4>
+                                    <div class="sub-title"></div>
+                                    <div class="info">
+                                        Go green by booking yourself an e-rickshaw ride online and travel short distances without the hassle of managing and arranging change.
+                                    </div>
+                                    <div class="feature-img">
+                                        <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Eco-Friendly Ride">
+                                            <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/eco-friendly.svg">
+                                        </div>
+                                        <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Value for Money">
+                                            <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/value-money.svg">
+                                        </div>
+                                        <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Cashless Ride">
+                                            <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/cashless.svg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+                    <div class="single-content" id="fleet-kaali-peeli">
+                        <div class="ft-comm-content">
+                            <div class="wd-60 left-content">
+                                <img src="assets/www.olacabs.com/webstatic/img/fleet-image/kaali-peeli.png" class="position-3"/>
+                            </div>
+                            <div class="wd-40">
+                                <div class="right-content">
+                                    <h4 class="heading">Kaali Peeli</h4>
+                                    <div class="sub-title">Haggle-free cashless rides</div>
+                                    <div class="info">
+                                        This offering by AutoHub allows you to book a local black-yellow cab like any other cab.
+                                    </div>
+                                    <div class="feature-img">
+                                        <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Value for Money">
+                                            <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/value-money.svg">
+                                        </div>
+                                        <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Cashless Ride">
+                                            <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/cashless.svg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="clearfix"></div>
+                        </div>
+                    </div>
+
+
+            </div>
+            <button type="button" class="prev-btn">Prev</button>
+            <button typpe="button" class="next-btn">Next</button>
+        </div>
+    </div>
+
+</section>
+
+<section class="hide">
+    <div class="ola-play">
+        <div class="max-width ola-play-wrapper">
+            <div class="wd-50 left">
+                <div class="play-img">
+
+                </div>
+            </div>
+            <div class="wd-50 right">
+                <div class="section-container ola-play-content">
+                    <h2 class="section-heading">Introducing AutoHub Play</h2>
+                    <label class="section-sub-heading">
+                        In-Cab Experience Console
+                    </label>
+                    <p class="info">
+                        Listen to the music you love, tune into your favorite radio<br>
+                        stations or watch TV shows and movies in HD, all from the<br>
+                        back seat of your cab with AutoHub Play!
+                    </p>
+                    <div class="clearfix"></div>
+                    <a id="ola_play_banner_know_more" href="javascript:void(0);" class="know-btn event-elem">
+                        Know more
+                    </a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</section>
+
+</div>
+<div id="otsttion" class="tab-pane fade">
+  <section>
+    <div class="category-container">
+        <div class="offers-wrapper clearfix max-width">
+            <div class="offers-slick">
+
+                    <div class="indiv-offer">
+
+                        <a class="content-wrapper" href="javascript:void(0);" >
+                            <div class="content-holder" style="padding: 0 0">
+                                <h4 class="heading">Fares starting at just Rs. 10/km</h4>
+                                <label class="info-lab">Pocket-friendly pricing</label>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="indiv-offer">
+
+                        <a class="content-wrapper" href="javascript:void(0);" >
+                            <div class="content-holder" style="padding: 0 0">
+                                <h4 class="heading">Safe and comfortable rides</h4>
+                                <label class="info-lab">24*7 support and on-road assistance</label>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="indiv-offer">
+
+                        <a class="content-wrapper" href="javascript:void(0);" >
+                            <div class="content-holder" style="padding: 0 0">
+                                <h4 class="heading">Largest fleet of Outstation Cabs</h4>
+                                <label class="info-lab">80+cities, 500+ one-way routes</label>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="indiv-offer">
+
+                        <a class="content-wrapper" href="javascript:void(0);" >
+                            <div class="content-holder" style="padding: 0 0">
+                                <h4 class="heading">12-hr return packages</h4>
+                                <label class="info-lab">Economical shorter round-trip options</label>
+                            </div>
+                        </a>
+
+                    </div>
+
+            </div>
+            <button type="button" class="prev-btn offer-prev-btn">Prev</button>
+            <button typpe="button" class="next-btn offer-next-btn">Next</button>
+        </div>
+        <div class="empty-space"></div>
+    </div>
+</section>
+
+
+    <section>
+        <div class="section-container why-ola max-width">
+            <h2 class="section-heading">Why ride with AutoHub Outstation?</h2>
+            <label class="section-sub-heading">
+                Making inter-city travel affordable, convenient and safe
+            </label>
+            <div class="item-list-wrapper clearfix">
+                <div class="wd-50">
+
+                        <a  class="indiv-item-list event-elem" event-name="why_ride_with_ola">
+                            <div class="wd-30">
+                                <div class="img-holder">
+                                    <img src="assets/cms-web.olacabs.com/00000000359.jpg" />
+                                </div>
+                            </div>
+                            <div class="wd-70">
+                                <h4 class="heading">
+                                     Advance Booking
+                                </h4>
+                                <p class="info">
+                                    Booking a cab for inter-city travel has never been this convenient. With AutoHub Outstation get a ride within 1 hour of booking or book up to 7 days in advance
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </a>
+
+                        <a  class="indiv-item-list event-elem" event-name="why_ride_with_ola">
+                            <div class="wd-30">
+                                <div class="img-holder">
+                                    <img src="assets/cms-web.olacabs.com/00000000349.jpg" />
+                                </div>
+                            </div>
+                            <div class="wd-70">
+                                <h4 class="heading">
+                                    Economical One-Way Trips
+                                </h4>
+                                <p class="info">
+                                    Why pay for a return journey when you are travelling just one way out of town. Choose your one-way travel package and ride away!
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </a>
+
+                        <a  class="indiv-item-list event-elem" event-name="why_ride_with_ola">
+                            <div class="wd-30">
+                                <div class="img-holder">
+                                    <img src="assets/cms-web.olacabs.com/00000000350.jpg" />
+                                </div>
+                            </div>
+                            <div class="wd-70">
+                                <h4 class="heading">
+                                    Secure and Safer Rides
+                                </h4>
+                                <p class="info">
+                                    We care about your safety! With AutoHub enjoy special safety features such as - SOS emergency button, 24*7 roadside assistance and live ride tracking.
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </a>
+
+                </div>
+                <div class="wd-50">
+
+                        <a   class="indiv-item-list event-elem" event-name="why_ride_with_ola">
+                            <div class="wd-30">
+                                <div class="img-holder">
+                                    <img src="assets/cms-web.olacabs.com/00000000373.jpg" />
+                                </div>
+                            </div>
+                            <div class="wd-70">
+                                <h4 class="heading">
+                                    Trained Partners
+                                </h4>
+                                <p class="info">
+                                    High-rated and verified partners with outstation driving experience to give you a smooth travel experience.
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </a>
+
+                        <a   class="indiv-item-list event-elem" event-name="why_ride_with_ola">
+                            <div class="wd-30">
+                                <div class="img-holder">
+                                    <img src="assets/cms-web.olacabs.com/00000000376.jpg" />
+                                </div>
+                            </div>
+                            <div class="wd-70">
+                                <h4 class="heading">
+                                    Vehicle Options
+                                </h4>
+                                <p class="info">
+                                    Taking your partner out or travelling with a group of friends? We have you covered. Choose from our range of Hatchbacks, Sedans, SUVs  and even Luxury cabs.
+
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </a>
+
+                        <a   class="indiv-item-list event-elem" event-name="why_ride_with_ola">
+                            <div class="wd-30">
+                                <div class="img-holder">
+                                    <img src="assets/cms-web.olacabs.com/00000000358.jpg" />
+                                </div>
+                            </div>
+                            <div class="wd-70">
+                                <h4 class="heading">
+                                    In Cab Entertainment
+                                </h4>
+                                <p class="info">
+                                    Got bored of the last time you went on a long road trip? You can now play music, watch videos and a lot more with our in-cab entertainment system AutoHub Play!
+
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </a>
+
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+
+<section>
+    <div class="featured-slider">
+        <div class="section-container max-width">
+            <h2 class="section-heading">When can you use AutoHub Outstation?</h2>
+            <label class="section-sub-heading">
+                We have you covered for all your needs
+            </label>
+        </div>
+        <div class="image-slider">
+
+            <div>
+
+                <img src="assets/cms-web.olacabs.com/00000000351.jpg">
+                <div class="text-overlay">
+                    <div class="title">Weekend Getaways</div>
+                    <div class="text">Hit the road this weekend with AutoHub and take a break from your busy schedules. Plan, Book and Travel!</div>
+                </div>
+            </div>
+
+            <div>
+
+                <img src="assets/cms-web.olacabs.com/00000000352.jpg">
+                <div class="text-overlay">
+                    <div class="title">Business Travel</div>
+                    <div class="text">Heading out to an important meeting out of town? Leave the travel part to AutoHub while you focus on your meeting.</div>
+                </div>
+            </div>
+
+            <div>
+
+                <img src="assets/cms-web.olacabs.com/00000000354.jpg">
+                <div class="text-overlay">
+                    <div class="title">Pilgrimages</div>
+                    <div class="text">Make pilgrimages and family outings super comfortable. Book an SUV on AutoHub Outstation with ample boot space and travel easy.</div>
+                </div>
+            </div>
+
+            <div>
+
+                <img src="assets/cms-web.olacabs.com/00000000355.jpg">
+                <div class="text-overlay">
+                    <div class="title">Road Trips</div>
+                    <div class="text">Long pending road trip with your friends and family? Book a Prime Play on AutoHub Outstation and enjoy a musical ride.</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<section class="hide">
+    <div class="ola-play">
+        <div class="max-width ola-play-wrapper">
+            <div class="wd-50 left">
+                <div class="play-img">
+
+                </div>
+            </div>
+            <div class="wd-50 right">
+                <div class="section-container ola-play-content">
+                    <h2 class="section-heading">Introducing Ola Play</h2>
+                    <label class="section-sub-heading">
+                        In-Cab Experience Console
+                    </label>
+                    <p class="info">
+                        Listen to the music you love, tune into your favorite radio<br>
+                        stations or watch TV shows and movies in HD, all from the<br>
+                        back seat of your cab with Ola Play!
+                    </p>
+                    <div class="clearfix"></div>
+                    <a href="javascript:void(0);" class="know-btn">
+                        Know more
+                    </a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="section-container ola-fleet max-width">
+        <h2 class="section-heading">Meet our Awesome Fleet</h2>
+        <label class="section-sub-heading">
+            The widest variety of cars to choose from
+        </label>
+        <div class="ola-fleet-options outstation-fleet" id="awesome-fleet">
+            <div class="slider-nav">
+
+                <div class="indiv-fleet" data-tab="fleet-mini">
+                    <div class="img-holder">
+                        <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-mini.svg" class="ola-fleet-icon"/>
+                        <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-mini-active.svg" class="ola-fleet-icon-active"/>
+                    </div>
+                    <label>Mini</label>
+                    <div class="triangle-up">
+                        <img src="assets/www.olacabs.com/webstatic/img/triangle-up-active.svg" />
+                    </div>
+                </div>
+                <div class="indiv-fleet" data-tab="fleet-prime-sedan">
+                    <div class="img-holder">
+                        <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-prime-sedan.svg" class="ola-fleet-icon"/>
+                        <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-prime-sedan-active.svg" class="ola-fleet-icon-active"/>
+                    </div>
+                    <label>Prime Sedan</label>
+                    <div class="triangle-up">
+                        <img src="assets/www.olacabs.com/webstatic/img/triangle-up-active.svg" />
+                    </div>
+                </div>
+                <div class="indiv-fleet" data-tab="fleet-prime-play">
+                    <div class="img-holder">
+                        <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-prime-play.svg" class="ola-fleet-icon"/>
+                        <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-prime-play-active.svg" class="ola-fleet-icon-active"/>
+                    </div>
+                    <label>Prime Play</label>
+                    <div class="triangle-up">
+                        <img src="assets/www.olacabs.com/webstatic/img/triangle-up-active.svg" />
+                    </div>
+                </div>
+                <div class="indiv-fleet" data-tab="fleet-prime-suv">
+                    <div class="img-holder">
+                        <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-prime-suv.svg" class="ola-fleet-icon"/>
+                        <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-prime-suv-active.svg" class="ola-fleet-icon-active"/>
+                    </div>
+                    <label>Prime SUV</label>
+                    <div class="triangle-up">
+                        <img src="assets/www.olacabs.com/webstatic/img/triangle-up-active.svg" />
+                    </div>
+                </div>
+                <div class="indiv-fleet" data-tab="fleet-lux">
+                    <div class="img-holder">
+                        <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-lux.svg" class="ola-fleet-icon"/>
+                        <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-lux-active.svg" class="ola-fleet-icon-active"/>
+                    </div>
+                    <label>LUX</label>
+                    <div class="triangle-up">
+                        <img src="assets/www.olacabs.com/webstatic/img/triangle-up-active.svg" />
+                    </div>
+                </div>
+
+
+
+
+            </div>
+            <button type="button" class="prev-btn-nav">Prev</button>
+            <button typpe="button" class="next-btn-nav">Next</button>
+        </div>
+    </div>
+
+    <div class="fleet-tab-content">
+        <div class="max-width fleet-tab-wrapper">
+            <div class="fleet-indiv-list slider-for">
+
+                <div class="single-content" id="fleet-mini">
+                    <div class="ft-comm-content">
+                        <div class="wd-60 left-content">
+                            <img src="assets/www.olacabs.com/webstatic/img/fleet-image/mini.png" class="position-5"/>
+                        </div>
+                        <div class="wd-40">
+                            <div class="right-content">
+                                <h4 class="heading">Mini</h4>
+                                <div class="sub-title">Everyday dependable ride</div>
+                                <div class="info">
+                                    A regular comfortable AC hatchback that becomes your everyday dependable ride. An economical option for daily commute.
+                                </div>
+                                <div class="feature-img">
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Air Conditioned Cab">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/ac.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Value for Money">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/value-money.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Regular Hatchback">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/regular-hatchback.svg" style="height: 25px;">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Space for 2 pieces of Luggage">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/baggage-2.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="single-content" id="fleet-prime-sedan">
+                    <div class="ft-comm-content">
+                        <div class="wd-60 left-content">
+                            <img src="assets/www.olacabs.com/webstatic/img/fleet-image/prime-sedan.png" class="position-6"/>
+                        </div>
+                        <div class="wd-40">
+                            <div class="right-content">
+                                <h4 class="heading">Prime Sedan</h4>
+                                <div class="sub-title">Sedans with free Wi-Fi and top drivers</div>
+                                <div class="info">
+                                    Top rated drivers, and a hand-picked fleet of the best cars with extra legroom and boot space.
+                                </div>
+                                <div class="feature-img">
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Air Conditioned Cab">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/ac.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Free Wi-Fi">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/wifi.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Extra Legroom">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/leg-room.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Extra Boot Space">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/boot-space.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Executive Ride">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/exec-ride.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="single-content" id="fleet-prime-play">
+                    <div class="ft-comm-content">
+                        <div class="wd-60 left-content">
+                            <img src="assets/www.olacabs.com/webstatic/img/fleet-image/prime-play.png" class="position-7"/>
+                        </div>
+                        <div class="wd-40">
+                            <div class="right-content">
+                                <h4 class="heading">Prime Play</h4>
+                                <div class="sub-title">Enjoy music, radio, videos on the go</div>
+                                <div class="info">
+                                    Cars with in-cab entertainment consoles that allow you to watch movies, listen to music and stay connected while on the move.
+                                </div>
+                                <div class="feature-img">
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Entertainment by Ola Play">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/ola-play.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Air Conditioned Cab">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/ac.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Free Wi-Fi">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/wifi.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Family Friendly Ride">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/family.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Space for 3 pieces of Luggage">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/baggage-3.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="single-content" id="fleet-prime-suv">
+                    <div class="ft-comm-content">
+                        <div class="wd-60 left-content">
+                            <img src="assets/www.olacabs.com/webstatic/img/fleet-image/prime-suv.png" class="position-9"/>
+                        </div>
+                        <div class="wd-40">
+                            <div class="right-content">
+                                <h4 class="heading">Prime SUV</h4>
+                                <div class="sub-title">SUVs with free Wi-Fi and top drivers</div>
+                                <div class="info">
+                                    A perfect choice of car for your weekend getaways, with plenty of room for everyone including that extra bag.
+                                </div>
+                                <div class="feature-img">
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Extra Legroom">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/leg-room.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Air Conditioned Cab">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/ac.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Free Wi-Fi">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/wifi.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Family Friendly Ride">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/family.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Space for 3 pieces of Luggage">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/baggage-3.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="single-content" id="fleet-lux">
+                    <div class="ft-comm-content">
+                        <div class="wd-60 left-content">
+                            <img src="assets/www.olacabs.com/webstatic/img/fleet-image/lux.png" class="position-8"/>
+                        </div>
+                        <div class="wd-40">
+                            <div class="right-content">
+                                <h4 class="heading">Lux</h4>
+                                <div class="sub-title">The new luxury ride in town</div>
+                                <div class="info">
+                                    Top-of-the-line luxury cars like Mercedes, BMW, and Audis powered by auto-connect Wi-Fi, at unbeatable fares & attractive hourly rental packages.
+                                </div>
+                                <div class="feature-img">
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Extra Legroom">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/leg-room.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Water Bottle Available">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/water-bottle.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Luxury ride">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/lux-ride.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Connect Phone via USB">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/usb.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+
+            </div>
+            <button type="button" class="prev-btn">Prev</button>
+            <button typpe="button" class="next-btn">Next</button>
+        </div>
+    </div>
+
+</section>
+
+<section class="hide">
+    <div class="ola-play">
+        <div class="max-width ola-play-wrapper">
+            <div class="wd-50 left">
+                <div class="play-img">
+
+                </div>
+            </div>
+            <div class="wd-50 right">
+                <div class="section-container ola-play-content">
+                    <h2 class="section-heading">Introducing AutoHub Play</h2>
+                    <label class="section-sub-heading">
+                        In-Cab Experience Console
+                    </label>
+                    <p class="info">
+                        Listen to the music you love, tune into your favorite radio<br>
+                        stations or watch TV shows and movies in HD, all from the<br>
+                        back seat of your cab with AutoHub Play!
+                    </p>
+                    <div class="clearfix"></div>
+                    <a id="ola_play_banner_know_more" href="javascript:void(0);" class="know-btn event-elem">
+                        Know more
+                    </a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</section>
+</div>
+<div id="rentls" class="tab-pane fade">
+  <section>
+    <div class="category-container">
+        <div class="offers-wrapper clearfix max-width">
+            <div class="offers-slick">
+
+                    <div class="indiv-offer">
+
+                        <a class="content-wrapper" href="javascript:void(0);" >
+                            <div class="content-holder" style="padding: 0 0">
+                                <h4 class="heading">30% off upto Rs. 250 on 1st AutoHub Rentals ride </h4>
+                                <label class="info-lab">Use code RENT250</label>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="indiv-offer">
+
+                        <a class="content-wrapper" href="javascript:void(0);" >
+                            <div class="content-holder" style="padding: 0 0">
+                                <h4 class="heading">One trip, many destinations</h4>
+                                <label class="info-lab">Travel to multiple destinations with just one booking </label>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="indiv-offer">
+
+                        <a class="content-wrapper" href="javascript:void(0);" >
+                            <div class="content-holder" style="padding: 0 0">
+                                <h4 class="heading">Hourly packages at affordable prices</h4>
+                                <label class="info-lab">1 &amp; 2 hr packages for short errands</label>
+                            </div>
+                        </a>
+
+                    </div>
+
+                    <div class="indiv-offer">
+
+                        <a class="content-wrapper event-elem"
+                           event-name="offers_tab_clicked"
+                           event-value="{'event_value':'offer_heading', 'route_name':'_to_'}"
+                           href="javascript:void(0);"
+                           >
+                            <div class="img-holder">
+                                <img src="assets/www.olacabs.com/webstatic/img/offer-1-active.svg" />
+                            </div>
+                            <div class="content-holder">
+                                <h4 class="heading">Upgrade to AutoHub Select</h4>
+                                <label class="info-lab">Explore the benefits of AutoHub Select</label>
+                            </div>
+                        </a>
+
+                    </div>
+
+            </div>
+            <button type="button" class="prev-btn offer-prev-btn">Prev</button>
+            <button typpe="button" class="next-btn offer-next-btn">Next</button>
+        </div>
+        <div class="empty-space"></div>
+    </div>
+</section>
+
+
+    <section>
+        <div class="section-container why-ola max-width">
+            <h2 class="section-heading">Why ride with AutoHub rentals?</h2>
+            <label class="section-sub-heading">
+                The best way to travel around town
+            </label>
+            <div class="item-list-wrapper clearfix">
+                <div class="wd-50">
+
+                        <a  class="indiv-item-list event-elem" event-name="why_ride_with_ola">
+                            <div class="wd-30">
+                                <div class="img-holder">
+                                    <img src="assets/cms-web.olacabs.com/00000000381.jpg" />
+                                </div>
+                            </div>
+                            <div class="wd-70">
+                                <h4 class="heading">
+                                    Cabs at your disposal
+                                </h4>
+                                <p class="info">
+                                    With AutoHub Rentals you get cabs at your disposal for as long as you want and travel to multiple destinations with just one booking within city limits.
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </a>
+
+                        <a  class="indiv-item-list event-elem" event-name="why_ride_with_ola">
+                            <div class="wd-30">
+                                <div class="img-holder">
+                                    <img src="assets/cms-web.olacabs.com/00000000334.jpg" />
+                                </div>
+                            </div>
+                            <div class="wd-70">
+                                <h4 class="heading">
+                                    Affordable packages
+                                </h4>
+                                <p class="info">
+                                    Packages start at 1 hour and can extend up to 12 hours! Also, with some nominal additional charges cabs can be retained beyond package limits
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </a>
+
+                        <a  class="indiv-item-list event-elem" event-name="why_ride_with_ola">
+                            <div class="wd-30">
+                                <div class="img-holder">
+                                    <img src="assets/cms-web.olacabs.com/00000000339.jpg" />
+                                </div>
+                            </div>
+                            <div class="wd-70">
+                                <h4 class="heading">
+                                    Flexible bookings
+                                </h4>
+                                <p class="info">
+                                    Easily plan a day out without having to worry about conveyance as with AutoHub Rentals you can book a cab immediately or up to 48 hours in advance.
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </a>
+
+                </div>
+                <div class="wd-50">
+
+                        <a   class="indiv-item-list event-elem" event-name="why_ride_with_ola">
+                            <div class="wd-30">
+                                <div class="img-holder">
+                                    <img src="assets/cms-web.olacabs.com/00000000342.jpg" />
+                                </div>
+                            </div>
+                            <div class="wd-70">
+                                <h4 class="heading">
+                                    Secure and Safer Rides
+                                </h4>
+                                <p class="info">
+                                    Verified drivers, an emergency alert button, and live ride tracking are some of the features that we have in place to ensure you a safe travel experience.
+
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </a>
+
+                        <a   class="indiv-item-list event-elem" event-name="why_ride_with_ola">
+                            <div class="wd-30">
+                                <div class="img-holder">
+                                    <img src="assets/cms-web.olacabs.com/00000000353.png" />
+                                </div>
+                            </div>
+                            <div class="wd-70">
+                                <h4 class="heading">
+                                    In Cab Entertainment
+                                </h4>
+                                <p class="info">
+                                    Play music, watch videos and a lot more with AutoHub Play!  Also stay connected even if you are travelling through poor network areas with our free wifi facility.
+
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </a>
+
+                        <a   class="indiv-item-list event-elem" event-name="why_ride_with_ola">
+                            <div class="wd-30">
+                                <div class="img-holder">
+                                    <img src="assets/cms-web.olacabs.com/00000000346.jpg" />
+                                </div>
+                            </div>
+                            <div class="wd-70">
+                                <h4 class="heading">
+                                    Cashless Rides
+                                </h4>
+                                <p class="info">
+                                    Now go cashless and travel easy. Simply recharge your AutoHub money or add your credit/debit card to enjoy hassle free payments
+                                </p>
+                            </div>
+                            <div class="clearfix"></div>
+                        </a>
+
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </section>
+
+
+<section>
+    <div class="featured-slider">
+        <div class="section-container max-width">
+            <h2 class="section-heading">When can you use AutoHub Rentals?</h2>
+            <label class="section-sub-heading">
+                We have you covered for all your needs
+            </label>
+        </div>
+        <div class="image-slider">
+
+            <div>
+
+                <img src="assets/cms-web.olacabs.com/00000000328.jpg">
+                <div class="text-overlay">
+                    <div class="title">Daily Errands</div>
+                    <div class="text">Now drop your kids off to school, visit a doctor, and get your groceries all in one cab. Perfect way for your personal errands!</div>
+                </div>
+            </div>
+
+            <div>
+
+                <img src="assets/cms-web.olacabs.com/00000000329.jpg">
+                <div class="text-overlay">
+                    <div class="title">Corporate Appointments</div>
+                    <div class="text">Now multiple meetings across town gets easier than ever. Book an AutoHub Rentals, choose the package of your choice and get going.</div>
+                </div>
+            </div>
+
+            <div>
+
+                <img src="assets/cms-web.olacabs.com/00000000330.jpg">
+                <div class="text-overlay">
+                    <div class="title">Outing with Friends</div>
+                    <div class="text">AutoHub Rentals makes group outings fun! Choose from our range of SUV’s and get a cab at your disposal for as long as you want. </div>
+                </div>
+            </div>
+
+            <div>
+
+                <img src="assets/cms-web.olacabs.com/00000000331.jpg">
+                <div class="text-overlay">
+                    <div class="title">Exploring a New City</div>
+                    <div class="text">We make your solo trip or a trip with your friends and family to a new city east. Book an AutoHub Rentals and explore the city in your own time. </div>
+                </div>
+            </div>
+
+            <div>
+
+                <img src="assets/cms-web.olacabs.com/00000000332.jpg">
+                <div class="text-overlay">
+                    <div class="title">Airport Rides</div>
+                    <div class="text">Dropping someone to the airport and getting back can now be done with just one cab booking.</div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="hide">
+    <div class="ola-play">
+        <div class="max-width ola-play-wrapper">
+            <div class="wd-50 left">
+                <div class="play-img">
+
+                </div>
+            </div>
+            <div class="wd-50 right">
+                <div class="section-container ola-play-content">
+                    <h2 class="section-heading">Introducing AutoHub Play</h2>
+                    <label class="section-sub-heading">
+                        In-Cab Experience Console
+                    </label>
+                    <p class="info">
+                        Listen to the music you love, tune into your favorite radio<br>
+                        stations or watch TV shows and movies in HD, all from the<br>
+                        back seat of your cab with AutoHub Play!
+                    </p>
+                    <div class="clearfix"></div>
+                    <a href="javascript:void(0);" class="know-btn">
+                        Know more
+                    </a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="section-container ola-fleet max-width">
+        <h2 class="section-heading">Meet our Awesome Fleet</h2>
+        <label class="section-sub-heading">
+            The widest variety of cars to choose from
+        </label>
+        <div class="ola-fleet-options outstation-fleet" id="awesome-fleet">
+            <div class="slider-nav">
+
+                <div class="indiv-fleet" data-tab="fleet-mini">
+                    <div class="img-holder">
+                        <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-mini.svg" class="ola-fleet-icon"/>
+                        <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-mini-active.svg" class="ola-fleet-icon-active"/>
+                    </div>
+                    <label>Mini</label>
+                    <div class="triangle-up">
+                        <img src="assets/www.olacabs.com/webstatic/img/triangle-up-active.svg" />
+                    </div>
+                </div>
+                <div class="indiv-fleet" data-tab="fleet-prime-sedan">
+                    <div class="img-holder">
+                        <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-prime-sedan.svg" class="ola-fleet-icon"/>
+                        <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-prime-sedan-active.svg" class="ola-fleet-icon-active"/>
+                    </div>
+                    <label>Prime Sedan</label>
+                    <div class="triangle-up">
+                        <img src="assets/www.olacabs.com/webstatic/img/triangle-up-active.svg" />
+                    </div>
+                </div>
+                <div class="indiv-fleet" data-tab="fleet-prime-play">
+                    <div class="img-holder">
+                        <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-prime-play.svg" class="ola-fleet-icon"/>
+                        <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-prime-play-active.svg" class="ola-fleet-icon-active"/>
+                    </div>
+                    <label>Prime Play</label>
+                    <div class="triangle-up">
+                        <img src="assets/www.olacabs.com/webstatic/img/triangle-up-active.svg" />
+                    </div>
+                </div>
+                <div class="indiv-fleet" data-tab="fleet-prime-suv">
+                    <div class="img-holder">
+                        <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-prime-suv.svg" class="ola-fleet-icon"/>
+                        <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-prime-suv-active.svg" class="ola-fleet-icon-active"/>
+                    </div>
+                    <label>Prime SUV</label>
+                    <div class="triangle-up">
+                        <img src="assets/www.olacabs.com/webstatic/img/triangle-up-active.svg" />
+                    </div>
+                </div>
+                <div class="indiv-fleet" data-tab="fleet-lux">
+                    <div class="img-holder">
+                        <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-lux.svg" class="ola-fleet-icon"/>
+                        <img src="assets/www.olacabs.com/webstatic/img/ola-fleet-svg/ola-lux-active.svg" class="ola-fleet-icon-active"/>
+                    </div>
+                    <label>LUX</label>
+                    <div class="triangle-up">
+                        <img src="assets/www.olacabs.com/webstatic/img/triangle-up-active.svg" />
+                    </div>
+                </div>
+
+
+            </div>
+            <button type="button" class="prev-btn-nav">Prev</button>
+            <button typpe="button" class="next-btn-nav">Next</button>
+        </div>
+    </div>
+
+    <div class="fleet-tab-content">
+        <div class="max-width fleet-tab-wrapper">
+            <div class="fleet-indiv-list slider-for">
+
+                <div class="single-content" id="fleet-mini">
+                    <div class="ft-comm-content">
+                        <div class="wd-60 left-content">
+                            <img src="assets/www.olacabs.com/webstatic/img/fleet-image/mini.png" class="position-5"/>
+                        </div>
+                        <div class="wd-40">
+                            <div class="right-content">
+                                <h4 class="heading">Mini</h4>
+                                <div class="sub-title">Everyday dependable ride</div>
+                                <div class="info">
+                                    A regular comfortable AC hatchback that becomes your everyday dependable ride. An economical option for daily commute.
+                                </div>
+                                <div class="feature-img">
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Air Conditioned Cab">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/ac.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Value for Money">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/value-money.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Regular Hatchback">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/regular-hatchback.svg" style="height: 25px;">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Space for 2 pieces of Luggage">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/baggage-2.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="single-content" id="fleet-prime-sedan">
+                    <div class="ft-comm-content">
+                        <div class="wd-60 left-content">
+                            <img src="assets/www.olacabs.com/webstatic/img/fleet-image/prime-sedan.png" class="position-6"/>
+                        </div>
+                        <div class="wd-40">
+                            <div class="right-content">
+                                <h4 class="heading">Prime Sedan</h4>
+                                <div class="sub-title">Sedans with free Wi-Fi and top drivers</div>
+                                <div class="info">
+                                    Top rated drivers, and a hand-picked fleet of the best cars with extra legroom and boot space.
+                                </div>
+                                <div class="feature-img">
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Air Conditioned Cab">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/ac.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Free Wi-Fi">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/wifi.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Extra Legroom">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/leg-room.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Extra Boot Space">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/boot-space.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Executive Ride">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/exec-ride.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="single-content" id="fleet-prime-play">
+                    <div class="ft-comm-content">
+                        <div class="wd-60 left-content">
+                            <img src="assets/www.olacabs.com/webstatic/img/fleet-image/prime-play.png" class="position-7"/>
+                        </div>
+                        <div class="wd-40">
+                            <div class="right-content">
+                                <h4 class="heading">Prime Play</h4>
+                                <div class="sub-title">Enjoy music, radio, videos on the go</div>
+                                <div class="info">
+                                    Cars with in-cab entertainment consoles that allow you to watch movies, listen to music and stay connected while on the move.
+                                </div>
+                                <div class="feature-img">
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Entertainment by Ola Play">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/ola-play.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Air Conditioned Cab">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/ac.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Free Wi-Fi">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/wifi.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Family Friendly Ride">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/family.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Space for 3 pieces of Luggage">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/baggage-3.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="single-content" id="fleet-prime-suv">
+                    <div class="ft-comm-content">
+                        <div class="wd-60 left-content">
+                            <img src="assets/www.olacabs.com/webstatic/img/fleet-image/prime-suv.png" class="position-9"/>
+                        </div>
+                        <div class="wd-40">
+                            <div class="right-content">
+                                <h4 class="heading">Prime SUV</h4>
+                                <div class="sub-title">SUVs with free Wi-Fi and top drivers</div>
+                                <div class="info">
+                                    A perfect choice of car for your weekend getaways, with plenty of room for everyone including that extra bag.
+                                </div>
+                                <div class="feature-img">
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Extra Legroom">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/leg-room.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Air Conditioned Cab">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/ac.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Free Wi-Fi">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/wifi.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Family Friendly Ride">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/family.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Space for 3 pieces of Luggage">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/baggage-3.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+                <div class="single-content" id="fleet-lux">
+                    <div class="ft-comm-content">
+                        <div class="wd-60 left-content">
+                            <img src="assets/www.olacabs.com/webstatic/img/fleet-image/lux.png" class="position-8"/>
+                        </div>
+                        <div class="wd-40">
+                            <div class="right-content">
+                                <h4 class="heading">Lux</h4>
+                                <div class="sub-title">The new luxury ride in town</div>
+                                <div class="info">
+                                    Top-of-the-line luxury cars like Mercedes, BMW, and Audis powered by auto-connect Wi-Fi, at unbeatable fares & attractive hourly rental packages.
+                                </div>
+                                <div class="feature-img">
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Extra Legroom">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/leg-room.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Water Bottle Available">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/water-bottle.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Luxury ride">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/lux-ride.svg">
+                                    </div>
+                                    <div class="img-holder" data-toggle="tooltip" data-placement="top" title="Connect Phone via USB">
+                                        <img class="option-img" src="assets/www.olacabs.com/webstatic/img/car-features/usb.svg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="clearfix"></div>
+                    </div>
+                </div>
+
+
+            </div>
+            <button type="button" class="prev-btn">Prev</button>
+            <button typpe="button" class="next-btn">Next</button>
+        </div>
+    </div>
+
+</section>
+
+<section class="hide">
+    <div class="ola-play">
+        <div class="max-width ola-play-wrapper">
+            <div class="wd-50 left">
+                <div class="play-img">
+
+                </div>
+            </div>
+            <div class="wd-50 right">
+                <div class="section-container ola-play-content">
+                    <h2 class="section-heading">Introducing AutoHub Play</h2>
+                    <label class="section-sub-heading">
+                        In-Cab Experience Console
+                    </label>
+                    <p class="info">
+                        Listen to the music you love, tune into your favorite radio<br>
+                        stations or watch TV shows and movies in HD, all from the<br>
+                        back seat of your cab with AutoHub Play!
+                    </p>
+                    <div class="clearfix"></div>
+                    <a id="ola_play_banner_know_more" href="javascript:void(0);" class="know-btn event-elem">
+                        Know more
+                    </a>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</section>
+</div>
+<section>
+  <div class="download-app">
+      <div class="max-width app-content">
+          <div class="wd-50 right text-center">
+              <img src="assets/www.olacabs.com/webstatic/img/ola-booking.png" class="booking-img" />
+          </div>
+          <div class="wd-50 left">
+              <div class="section-container download-content">
+                  <h2 class="section-heading">Book an AutoHub from the App</h2>
+                  <p class="info">
+                      Download the app for exclusive deals and ease of booking
+                  </p>
+                  <div class="download-link-wrapper">
+                      <a href="javascript:void(0);"  class="download-link">
+                          <img src="assets/www.olacabs.com/webstatic/img/playstore.png" />
+                      </a>
+                  </div>
+              </div>
+          </div>
+          <div class="clearfix"></div>
+      </div>
+  </div>
+</section>
+<section>
+  <div class="ola-features">
+      <div class="features-wrapper clearfix max-width">
+          <div class="indiv-feature">
+              <img src="assets/www.olacabs.com/webstatic/img/ola-support.svg" class="feature-img" />
+              <div class="feature-content">
+                  <h2 class="heading">24/7 Customer Support</h2>
+                  <p class="info">
+                      A dedicated 24x7 customer<br>
+                      support team always at your<br>
+                      service to help solve any problem
+                  </p>
+              </div>
+          </div>
+          <div class="indiv-feature">
+              <img src="assets/www.olacabs.com/webstatic/img/send_out_succour.svg" class="feature-img" />
+              <div class="feature-content">
+                  <h2 class="heading">Your Safety First</h2>
+                  <p class="info">
+                      Keep your loved ones informed<br>
+                      about your travel routes or call<br>
+                      emergency services when in need
+                  </p>
+              </div>
+          </div>
+          <div class="indiv-feature">
+              <img src="assets/www.olacabs.com/webstatic/img/ola-best-driver.svg" class="feature-img" />
+              <div class="feature-content">
+                  <h2 class="heading">Top Rated Driver-Partners</h2>
+                  <p class="info">
+                      All our driver-partners are<br>
+                      background verified and trained to<br>
+                      deliver only the best experience
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+</div> -->
+</div>
 <router-outlet></router-outlet>
-<a routerLink="home" (click)="ciytaxi()">CityTaxi</a>
-<a routerLink="home" (click)="oustation()">Outstation</a>
+<!-- <a routerLink="home" (click)="ciytaxi()">CityTaxi</a>
+<a routerLink="home" (click)="oustation()">Outstation</a> -->
 <div *ngIf = citytaxi>
 
   <app-citytaxi></app-citytaxi>
@@ -10,3 +2092,6 @@
 <div *ngIf = outstation>
 <app-outstation></app-outstation>
 </div>
+<div *ngIf = rntls>
+  <app-rentals></app-rentals>
+  </div>
