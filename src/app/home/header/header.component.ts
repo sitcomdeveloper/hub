@@ -15,4 +15,10 @@ export class HeaderComponent implements OnInit {
   bookthehub() {
     this.router.navigateByUrl('home/book');
   }
+  drive() {
+    this.router.navigateByUrl('home/drive');
+  }
+  select() {
+    this.router.navigateByUrl('home/select');
+  }
 }

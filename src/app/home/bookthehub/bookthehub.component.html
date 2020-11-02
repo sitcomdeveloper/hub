@@ -24,6 +24,7 @@
   <div class="form-group">
   <a class="button submit-button itembutton" href="javascript:void(0);" (click)="sendOtp()"
      >Send OTP</a>
-  <a class="button button2 itembutton1" href="javascript:void(0);">Cancel</a>
+  <a class="button button2 itembutton1" href="javascript:void(0);" (click)="routetoHome()">Cancel</a>
+  <div class="message">{{this.fetchotp?.message}}</div>
 </div>
 </div>

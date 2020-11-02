@@ -7,6 +7,8 @@ import { OutstationComponent } from './outstation/outstation.component';
 import { BookthehubComponent } from './bookthehub/bookthehub.component';
 import { RentalsComponent } from './rentals/rentals.component';
 import { OtpComponent } from './bookthehub/otp/otp.component';
+import { DriveComponent } from './drive/drive.component';
+import { SelectComponent } from './select/select.component';
 
 const routes: Routes = [
   {
@@ -14,12 +16,13 @@ const routes: Routes = [
       { path: 'citytaxi', component: CitytaxiComponent },
       { path: 'outstation', component: OutstationComponent },
       { path: 'rentals', component: RentalsComponent },
-
     ]
   },
   { path: 'book', component: BookthehubComponent, children: [
     {path: 'verify', component: OtpComponent},
   ]},
+  { path: 'drive', component: DriveComponent },
+  { path: 'select', component: SelectComponent },
 ]
 
 @NgModule({

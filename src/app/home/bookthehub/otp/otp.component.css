@@ -47,3 +47,9 @@ section form input:focus, section form input.focus {
   outline: none;
   box-shadow: none;
 }
+.message{
+  color: green;
+  /* text-align: center;
+  margin-left: 285px;
+  margin-bottom: 5px; */
+}

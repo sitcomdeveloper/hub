@@ -17,13 +17,13 @@
 	<input type="text" id="digit-5" name="digit-5" data-next="digit-6" data-previous="digit-4" />
 	<input type="text" id="digit-6" name="digit-6" data-previous="digit-5" />
 </form> -->
-
-<section>
-	<form>
-		<input id="codeBox1" type="number" minlength="1" maxlength="1">
-		<input id="codeBox2" type="number" maxlength="1" >
-		<input id="codeBox3" type="number" maxlength="1" >
-		<input id="codeBox4" type="number" maxlength="1" >
+<!-- writte otp -->
+<section *ngIf = getOtp>
+	<form [formGroup] = enterotpForm>
+		<input id="codeBox1" type="number" minlength="1" maxlength="1" formControlName = "otp">
+		<input id="codeBox2" type="number" maxlength="1" formControlName = "otp1">
+		<input id="codeBox3" type="number" maxlength="1" formControlName = "otp2">
+		<input id="codeBox4" type="number" maxlength="1" formControlName = "otp3">
   </form>
   <div class="text-center">
     <div class="form-group">
@@ -31,7 +31,15 @@
        >Submit</a>
     <a class="button button2 itembutton1" href="javascript:void(0);" (click)=" hideModal()">Cancel</a>
     <a class="button button2 itembutton1" href="javascript:void(0);" (click)="resendOtp()">Resend</a>
+    <!-- otp verify msg -->
+    <div class="message">{{this.getotpverifyRes?.message}}</div>
+    <!-- resend otp mesage -->
+    <div class="message">{{this.getresendotpRes?.message}}</div>
   </div>
   </div>
 </section>
 <!-- onkeyup="onKeyUpEvent(1, event)" onfocus="onFocusEvent(1)" -->
+<!-- register the user -->
+<div *ngIf = registerUser>
+  register
+</div>

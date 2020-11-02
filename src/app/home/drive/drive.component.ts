@@ -1,13 +1,14 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-rentals',
-  templateUrl: './rentals.component.html',
-  styleUrls: ['./rentals.component.css']
+  selector: 'app-drive',
+  templateUrl: './drive.component.html',
+  styleUrls: ['./drive.component.css']
 })
-export class RentalsComponent implements OnInit {
+export class DriveComponent implements OnInit {
 
   constructor() { }
+
   loadScript(url: string) {
     const body = <HTMLDivElement>document.body;
     const script = document.createElement("script");

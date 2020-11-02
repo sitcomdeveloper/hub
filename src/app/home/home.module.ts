@@ -9,11 +9,15 @@ import { RentalsComponent } from './rentals/rentals.component';
 import { HeaderComponent } from './header/header.component';
 import { BookthehubComponent } from './bookthehub/bookthehub.component';
 import { OtpComponent } from './bookthehub/otp/otp.component';
+import { FooterComponent } from './footer/footer.component';
+import { DriveComponent } from './drive/drive.component';
+import { SelectComponent } from './select/select.component';
+import { DownloadComponent } from './download/download.component';
 
 
 
 @NgModule({
-  declarations: [HomeComponent, CitytaxiComponent, OutstationComponent, RentalsComponent, HeaderComponent, BookthehubComponent, OtpComponent],
+  declarations: [HomeComponent, CitytaxiComponent, OutstationComponent, RentalsComponent, HeaderComponent, BookthehubComponent, OtpComponent, FooterComponent, DriveComponent, SelectComponent, DownloadComponent],
   imports: [
     CommonModule, HomeRoutingModule, FormsModule, ReactiveFormsModule
   ],
