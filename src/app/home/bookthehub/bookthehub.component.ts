@@ -1,20 +1,32 @@
 import { Component,OnInit,  } from '@angular/core';
 import { OtpComponent } from './otp/otp.component';
 import { BsModalRef, BsModalService, ModalOptions } from 'ngx-bootstrap/modal';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { ApiService } from 'src/app/api.service';
 @Component({
   selector: 'app-bookthehub',
   templateUrl: './bookthehub.component.html',
   styleUrls: ['./bookthehub.component.css']
 })
 export class BookthehubComponent implements OnInit {
-  // @Input() prtdata: any;
-  // @Output() clddata: EventEmitter<any> = new EventEmitter();
   title: any;
-  constructor(private modalService: BsModalService) { }
+  fetchotp: any;
+  constructor(private modalService: BsModalService, private fb: FormBuilder, private apiService: ApiService) { }
   bsModalRef: BsModalRef;
+  bookForm: FormGroup;
   ngOnInit(): void {
+    this.bookForm = this.fb.group({
+      phone: ['']
+    })
   }
   sendOtp() {
+    const usrlogin = {
+      phone: this.bookForm.value.phone
+    };
+    this.apiService.userLogin(usrlogin).subscribe(getotp => {
+      this.fetchotp = getotp;
+      console.log('fetchotp', getotp);
+    })
     const initialState = {
       title: 'Enter the OTP',
     };
@@ -25,6 +37,6 @@ export class BookthehubComponent implements OnInit {
     // this.bsModalRef.content.clddata.subscribe(data => {
     // this.userDetails();
     // });
-  }
-
+    }
 }
+

@@ -1,4 +1,3 @@
-<p>otp works!</p>
 <div class="modal-header">
   <h4 class="modal-title pull-left">{{title}} </h4>
   <button type="button" class="close pull-right" aria-label="Close" (click)=" hideModal()">
@@ -28,9 +27,10 @@
   </form>
   <div class="text-center">
     <div class="form-group">
-    <a class="button submit-button itembutton" href="javascript:void(0);"
+    <a class="button submit-button itembutton" href="javascript:void(0);" (click)="otpVerify()"
        >Submit</a>
     <a class="button button2 itembutton1" href="javascript:void(0);" (click)=" hideModal()">Cancel</a>
+    <a class="button button2 itembutton1" href="javascript:void(0);" (click)="resendOtp()">Resend</a>
   </div>
   </div>
 </section>
