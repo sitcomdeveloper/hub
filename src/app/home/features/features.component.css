@@ -1,0 +1,9 @@
+/* a.tab.tab-active :hover{
+  color: hotpink;
+} */
+/* a.tab.tab-active :hover{
+  color: hotpink;
+} */
+.features-tab-container .features-tab a :hover{
+  color: hotpink;
+}

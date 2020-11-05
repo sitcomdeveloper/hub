@@ -13,14 +13,19 @@ import { FooterComponent } from './footer/footer.component';
 import { DriveComponent } from './drive/drive.component';
 import { SelectComponent } from './select/select.component';
 import { DownloadComponent } from './download/download.component';
+import { FeaturesComponent } from './features/features.component';
+import { FeaturescitytaxiComponent } from './features/featurescitytaxi/featurescitytaxi.component';
+import { FeaturesoutstationComponent } from './features/featuresoutstation/featuresoutstation.component';
+import { FeaturesrentalsComponent } from './features/featuresrentals/featuresrentals.component';
+import { RegisterComponent } from './bookthehub/register/register.component';
 
 
 
 @NgModule({
-  declarations: [HomeComponent, CitytaxiComponent, OutstationComponent, RentalsComponent, HeaderComponent, BookthehubComponent, OtpComponent, FooterComponent, DriveComponent, SelectComponent, DownloadComponent],
+  declarations: [HomeComponent, CitytaxiComponent, OutstationComponent, RentalsComponent, HeaderComponent, BookthehubComponent, OtpComponent, FooterComponent, DriveComponent, SelectComponent, DownloadComponent, FeaturesComponent, FeaturescitytaxiComponent, FeaturesoutstationComponent, FeaturesrentalsComponent, RegisterComponent],
   imports: [
     CommonModule, HomeRoutingModule, FormsModule, ReactiveFormsModule
   ],
-  entryComponents: [OtpComponent],
+  entryComponents: [OtpComponent, RegisterComponent],
 })
 export class HomeModule { }

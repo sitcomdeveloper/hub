@@ -1,4 +1,4 @@
-<div class="row">
+<!-- <div class="row">
   <div class="col-xs-3 col-md-3">
      <label class="valign-label" for="Phone">
      <span
@@ -27,4 +27,46 @@
   <a class="button button2 itembutton1" href="javascript:void(0);" (click)="routetoHome()">Cancel</a>
   <div class="message">{{this.fetchotp?.message}}</div>
 </div>
-</div>
+</div> -->
+
+<h1 class="error">AutoHub Login Form</h1>
+    <div class="w3layouts-two-grids">
+        <div class="mid-class">
+            <div class="txt-left-side">
+                <h2> Book a ride </h2>
+                <p>Welcome to AutoHub</p>
+                <form [formGroup]="bookForm">
+                    <div class="form-left-to-w3l">
+                        <span class="fa fa-mobile" aria-hidden="true"></span>
+                        <!-- <input type="email" name="email" placeholder="Email" required=""> -->
+                        <input class="form-control itemformcontrol"
+                        name="Phone" type="number" formControlName="phone" placeholder="Enter Your number"
+                        appPhoneMask>
+                    </div>
+                    <div class="message">{{this.fetchotp?.message}}</div>
+                    <div class="main-two-w3ls">
+                        <div class="left-side-forget">
+                        </div>
+                        <div class="right-side-forget">
+                        </div>
+                    </div>
+                    <div class="btnn">
+                        <button type="submit" (click)="sendOtp()">Send</button>
+                        <button type="submit" (click)="routetoHome()">Back to Home</button>
+                    </div>
+                </form>
+                <div class="w3layouts_more-buttn">
+                    <!-- <h3>Don't Have an account..?
+                        <a href="#">Register Here
+                        </a>
+                    </h3> -->
+                </div>
+
+            </div>
+            <div class="img-right-side">
+                <h3>Make your way with the AutoHub</h3>
+                <!-- <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget</p> -->
+                <img src="assets/www.olacabs.com/webstatic/img/logoautohub.jpg" class="img-fluid" alt="">
+            </div>
+        </div>
+    </div>

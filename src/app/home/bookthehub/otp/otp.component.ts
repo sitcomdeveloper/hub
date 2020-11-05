@@ -24,19 +24,19 @@ export class OtpComponent implements OnInit {
 
   ngOnInit(): void {
     // get otp
-    if(this.sendotp === 'sendotp') {
-      this.getOtp = true;
-      this.assign = this.assignfetchotp
-      console.log('a',this.assign);
-    } else {
-      this.getOtp = false;
-    }
-    // register user
-    if(this.register === 'register') {
-      this.registerUser = true;
-    } else {
-      this.registerUser = false;
-    }
+    // if (this.sendotp === 'sendotp') {
+    //   this.getOtp = true;
+    //   this.assign = this.assignfetchotp
+    //   console.log('a', this.assign);
+    // } else {
+    //   this.getOtp = false;
+    // }
+    // // register user
+    // if (this.register === 'register') {
+    //   this.registerUser = true;
+    // } else {
+    //   this.registerUser = false;
+    // }
     this.enterotpForm = this.fb.group({
       otp: [''],
       otp1: [''],
@@ -48,8 +48,8 @@ export class OtpComponent implements OnInit {
   hideModal() {
     this.bsmodal.hide();
   }
-   // otp verify
-   otpVerify() {
+  // otp verify
+  otpVerify() {
     this.assign = this.assignfetchotp
     const otpvrify = {
       userID: this.assign.userID,
@@ -58,10 +58,10 @@ export class OtpComponent implements OnInit {
     this.apiService.otpVerifcation(otpvrify).subscribe(otpverifyRes => {
       this.getotpverifyRes = otpverifyRes;
       this.enterotpForm.reset();
-      console.log('getotpverifyRes',otpverifyRes);
+      console.log('getotpverifyRes', otpverifyRes);
     })
   }
-// resend otp
+  // resend otp
   resendOtp() {
     this.assign = this.assignfetchotp
     const rsendotp = {
@@ -73,4 +73,6 @@ export class OtpComponent implements OnInit {
       console.log('getresendotpRes', resndotpRes);
     })
   }
+  // register user
+
 }

@@ -9,6 +9,7 @@ import { RentalsComponent } from './rentals/rentals.component';
 import { OtpComponent } from './bookthehub/otp/otp.component';
 import { DriveComponent } from './drive/drive.component';
 import { SelectComponent } from './select/select.component';
+import { FeaturesComponent } from './features/features.component';
 
 const routes: Routes = [
   {
@@ -23,6 +24,7 @@ const routes: Routes = [
   ]},
   { path: 'drive', component: DriveComponent },
   { path: 'select', component: SelectComponent },
+  { path: 'features', component: FeaturesComponent },
 ]
 
 @NgModule({

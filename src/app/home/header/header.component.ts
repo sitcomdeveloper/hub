@@ -21,4 +21,7 @@ export class HeaderComponent implements OnInit {
   select() {
     this.router.navigateByUrl('home/select');
   }
+  features() {
+    this.router.navigateByUrl('home/features');
+  }
 }

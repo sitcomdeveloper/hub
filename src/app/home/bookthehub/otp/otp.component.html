@@ -18,7 +18,7 @@
 	<input type="text" id="digit-6" name="digit-6" data-previous="digit-5" />
 </form> -->
 <!-- writte otp -->
-<section *ngIf = getOtp>
+<section >
 	<form [formGroup] = enterotpForm>
 		<input id="codeBox1" type="number" minlength="1" maxlength="1" formControlName = "otp">
 		<input id="codeBox2" type="number" maxlength="1" formControlName = "otp1">
@@ -39,7 +39,3 @@
   </div>
 </section>
 <!-- onkeyup="onKeyUpEvent(1, event)" onfocus="onFocusEvent(1)" -->
-<!-- register the user -->
-<div *ngIf = registerUser>
-  register
-</div>

@@ -1,0 +1,82 @@
+<app-header></app-header>
+<section>
+  <div class="common-top-banner features-banner">
+      <div class="overlay"></div>
+      <div class="text-overlay"></div>
+      <div class="banner-content">
+          <h1>Cab Features</h1>
+          <label>What makes us different?</label>
+      </div>
+  </div>
+</section>
+<section>
+  <div class="features-tab-container">
+      <div class="features-tab">
+          <a class="tab tab-active" data-tab="city-taxi" (click)="featurescitytaxi()">
+              City taxi
+          </a>
+          <a class="tab" data-tab="outstation" (click)="featuresoutstation()">
+              Outstation
+          </a>
+          <a class="tab" data-tab="rental" (click)="featuresrentals()">
+              Rentals
+          </a>
+      </div>
+      <router-outlet></router-outlet>
+      <!-- features citytaxi--------------------------------------------------------------------- -->
+      <div *ngIf = fturctytxi>
+        <app-featurescitytaxi></app-featurescitytaxi>
+      </div>
+
+      <!-- features outstation----------------------------------------------------------- -->
+      <div *ngIf = ftreotstation>
+        <app-featuresoutstation></app-featuresoutstation>
+      </div>
+
+    <!-- fetures rentals------------------------------------------------- -->
+    <div *ngIf = ftrrntls>
+      <app-featuresrentals></app-featuresrentals>
+    </div>
+
+  </div>
+</section>
+<section class="feature-page">
+  <div class="ola-features">
+      <div class="features-wrapper clearfix max-width">
+          <div class="indiv-feature">
+              <img src="assets/www.olacabs.com/webstatic/img/ola-support.svg" class="feature-img" />
+              <div class="feature-content">
+                  <h2 class="heading">24/7 Customer Support</h2>
+                  <p class="info">
+                      A dedicated 24x7 customer<br>
+                      support team always at your<br>
+                      service to help solve any problem
+                  </p>
+              </div>
+          </div>
+          <div class="indiv-feature">
+              <img src="assets/www.olacabs.com/webstatic/img/send_out_succour.svg" class="feature-img" />
+              <div class="feature-content">
+                  <h2 class="heading">Your Safety First</h2>
+                  <p class="info">
+                      Keep your loved ones informed<br>
+                      about your travel routes or call<br>
+                      emergency services when in need
+                  </p>
+              </div>
+          </div>
+          <div class="indiv-feature">
+              <img src="assets/www.olacabs.com/webstatic/img/ola-best-driver.svg" class="feature-img" />
+              <div class="feature-content">
+                  <h2 class="heading">Top Rated Driver-Partners</h2>
+                  <p class="info">
+                      All our driver-partners are<br>
+                      background verified and trained to<br>
+                      deliver only the best experience
+                  </p>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+<app-footer></app-footer>
