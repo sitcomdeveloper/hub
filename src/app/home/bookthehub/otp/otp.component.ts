@@ -20,9 +20,17 @@ export class OtpComponent implements OnInit {
   assignfetchotp: any;
   enterotpForm: FormGroup
   assign: any;
+  getuniqueDetails: any;
+  bindData: any;
   constructor(private bsmodal: BsModalRef, private apiService: ApiService, private fb: FormBuilder) { }
 
   ngOnInit(): void {
+     // code for receiving details
+     this.getuniqueDetails = JSON.parse(window.sessionStorage.getItem('uniquedtls'));
+     this.bindData = this.getuniqueDetails;
+     console.log('parse', this.bindData);
+
+    // this.assign = this.assignfetchotp
     // get otp
     // if (this.sendotp === 'sendotp') {
     //   this.getOtp = true;
@@ -50,9 +58,9 @@ export class OtpComponent implements OnInit {
   }
   // otp verify
   otpVerify() {
-    this.assign = this.assignfetchotp
+    // this.assign = this.assignfetchotp
     const otpvrify = {
-      userID: this.assign.userID,
+      userID: this.bindData?.userID,
       otp: '' + this.enterotpForm.value.otp + this.enterotpForm.value.otp1 + this.enterotpForm.value.otp2 + this.enterotpForm.value.otp3
     }
     this.apiService.otpVerifcation(otpvrify).subscribe(otpverifyRes => {
@@ -63,9 +71,9 @@ export class OtpComponent implements OnInit {
   }
   // resend otp
   resendOtp() {
-    this.assign = this.assignfetchotp
+    // this.assign = this.assignfetchotp
     const rsendotp = {
-      userID: this.assign.userID,
+      userID: this.bindData?.userID,
     }
     this.apiService.resendOtp(rsendotp).subscribe(resndotpRes => {
       this.getresendotpRes = resndotpRes;

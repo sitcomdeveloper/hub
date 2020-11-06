@@ -20,7 +20,6 @@ import { FeaturesrentalsComponent } from './features/featuresrentals/featuresren
 import { RegisterComponent } from './bookthehub/register/register.component';
 
 
-
 @NgModule({
   declarations: [HomeComponent, CitytaxiComponent, OutstationComponent, RentalsComponent, HeaderComponent, BookthehubComponent, OtpComponent, FooterComponent, DriveComponent, SelectComponent, DownloadComponent, FeaturesComponent, FeaturescitytaxiComponent, FeaturesoutstationComponent, FeaturesrentalsComponent, RegisterComponent],
   imports: [

@@ -28,6 +28,8 @@ export class BookthehubComponent implements OnInit {
     };
     this.apiService.userLogin(usrlogin).subscribe(getotp => {
       this.fetchotp = getotp;
+      window.sessionStorage.setItem('uniquedtls', JSON.stringify(getotp));
+      console.log('stringifydata', JSON.stringify(getotp));
       if(this.fetchotp.IsExist === 'true, already registered...') {
         const initialState = {
           title: 'Enter the OTP',
@@ -43,6 +45,7 @@ export class BookthehubComponent implements OnInit {
         } else {
           const initialState = {
             title: 'Register',
+            assignfetchotp: this.fetchotp
             // register: 'register'
           };
           this.bsModalRef = this.modalService.show(RegisterComponent, Object.assign({ backdrop: 'static', show: true }, { class: 'modal750', initialState }));

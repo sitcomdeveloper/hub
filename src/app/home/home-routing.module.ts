@@ -6,7 +6,6 @@ import { CitytaxiComponent } from './citytaxi/citytaxi.component';
 import { OutstationComponent } from './outstation/outstation.component';
 import { BookthehubComponent } from './bookthehub/bookthehub.component';
 import { RentalsComponent } from './rentals/rentals.component';
-import { OtpComponent } from './bookthehub/otp/otp.component';
 import { DriveComponent } from './drive/drive.component';
 import { SelectComponent } from './select/select.component';
 import { FeaturesComponent } from './features/features.component';
@@ -20,7 +19,7 @@ const routes: Routes = [
     ]
   },
   { path: 'book', component: BookthehubComponent, children: [
-    {path: 'verify', component: OtpComponent},
+    // {path: 'verify', component: OtpComponent},
   ]},
   { path: 'drive', component: DriveComponent },
   { path: 'select', component: SelectComponent },

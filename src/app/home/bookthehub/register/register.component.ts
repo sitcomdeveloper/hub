@@ -3,6 +3,7 @@ import { FormBuilder, FormGroup } from '@angular/forms';
 import { ApiService } from 'src/app/api.service';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { Router } from '@angular/router';
+import { OtpComponent } from '../otp/otp.component';
 @Component({
   selector: 'app-register',
   templateUrl: './register.component.html',
@@ -12,13 +13,21 @@ export class RegisterComponent implements OnInit {
   @Input() prtdata: any;
   @Output() clddata: EventEmitter<any> = new EventEmitter();
   title: any;
-  getRegisteruserres: any;
   enterotpForm: FormGroup
   assign: any;
   assignfetchotp: any;
-  constructor(private apiService: ApiService, private fb: FormBuilder, private bsmodal: BsModalRef, private router: Router) { }
+  getUpdateuserres: any;
+  getuniqueDetails: any;
+  bindData: any;
 
+  constructor(private apiService: ApiService, private fb: FormBuilder, private bsmodal: BsModalRef, private router: Router, private modalService: BsModalService) { }
+  bsModalRef: BsModalRef;
   ngOnInit(): void {
+     // code for receiving details
+     this.getuniqueDetails = JSON.parse(window.sessionStorage.getItem('uniquedtls'));
+     this.bindData = this.getuniqueDetails;
+
+    this.assign = this.assignfetchotp
     this.enterotpForm = this.fb.group({
       fullname: [''],
       email: ['']
@@ -27,20 +36,28 @@ export class RegisterComponent implements OnInit {
   hideModal() {
     this.bsmodal.hide();
   }
-  regiterUsr() {
-    this.assign = this.assignfetchotp
-    const rgstruser = {
+  updtusrUsr() {
+    const updteusrdta = {
+      userID: this.bindData?.userID,
       name: this.enterotpForm.value.fullname,
       email: this.enterotpForm.value.email,
-      phone: this.assign.phone,
-      facebook: '',
-      google: '',
-      profile: '',
+      phone: this.bindData?.phone,
     }
-    this.apiService.userRegister(rgstruser).subscribe(registeruserRes => {
-      this.getRegisteruserres = registeruserRes;
-      this.router.navigateByUrl('verify');
-      console.log('getRegisteruserres', registeruserRes);
+    this.apiService.updateuserData(updteusrdta).subscribe(updateuserRes => {
+      this.getUpdateuserres = updateuserRes;
+      console.log('getUpdateuserres', updateuserRes);
     })
+    const initialState = {
+      title: 'Enter the OTP',
+      // assignfetchotp: this.fetchotp
+      // this.assign,
+
+    };
+    this.bsModalRef = this.modalService.show(OtpComponent, Object.assign({ backdrop: 'static', show: true }, { class: 'modal750', initialState }));
+    this.bsModalRef.content.closeBtnName = 'Cancel';
+    // this.bsmodal.hide();
+    // this.bsModalRef.content.clddata.subscribe(data => {
+    // this.userDetails();
+    // });
+    }
   }
-}

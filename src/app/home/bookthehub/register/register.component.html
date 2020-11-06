@@ -14,9 +14,10 @@
 					<form [formGroup] = enterotpForm>
 						<input placeholder="Enter Full Name" name="Name" type="text" required="" formControlName="fullname">
 						<input placeholder="Email(Optional)" name="Email" type="email" required="" formControlName="email">
-						<input type="submit" value="Continue" name="login" (click)="regiterUsr()">
+						<input type="submit" value="Continue" name="login" (click)="updtusrUsr()">
 					</form>
 			</div>
-		</div>
+    </div>
+    <div class="message">{{this.getUpdateuserres?.message}}</div>
 	</div>
 
