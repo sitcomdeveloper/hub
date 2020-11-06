@@ -18,10 +18,14 @@ import { FeaturescitytaxiComponent } from './features/featurescitytaxi/featuresc
 import { FeaturesoutstationComponent } from './features/featuresoutstation/featuresoutstation.component';
 import { FeaturesrentalsComponent } from './features/featuresrentals/featuresrentals.component';
 import { RegisterComponent } from './bookthehub/register/register.component';
+import { SelecthubComponent } from './selecthub/selecthub.component';
+import { SelecthubdailyridesComponent } from './selecthub/selecthubdailyrides/selecthubdailyrides.component';
+import { UserprofileComponent } from './userprofile/userprofile.component';
+
 
 
 @NgModule({
-  declarations: [HomeComponent, CitytaxiComponent, OutstationComponent, RentalsComponent, HeaderComponent, BookthehubComponent, OtpComponent, FooterComponent, DriveComponent, SelectComponent, DownloadComponent, FeaturesComponent, FeaturescitytaxiComponent, FeaturesoutstationComponent, FeaturesrentalsComponent, RegisterComponent],
+  declarations: [HomeComponent, CitytaxiComponent, OutstationComponent, RentalsComponent, HeaderComponent, BookthehubComponent, OtpComponent, FooterComponent, DriveComponent, SelectComponent, DownloadComponent, FeaturesComponent, FeaturescitytaxiComponent, FeaturesoutstationComponent, FeaturesrentalsComponent, RegisterComponent, SelecthubComponent, SelecthubdailyridesComponent, UserprofileComponent],
   imports: [
     CommonModule, HomeRoutingModule, FormsModule, ReactiveFormsModule
   ],

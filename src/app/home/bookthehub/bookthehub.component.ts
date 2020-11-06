@@ -1,10 +1,11 @@
 import { Component,OnInit,  } from '@angular/core';
-import { OtpComponent } from './otp/otp.component';
-import { BsModalRef, BsModalService, ModalOptions } from 'ngx-bootstrap/modal';
 import { FormBuilder, FormGroup } from '@angular/forms';
-import { ApiService } from 'src/app/api.service';
 import { Router } from '@angular/router';
+import { ApiService } from 'src/app/api.service';
+import { OtpComponent } from './otp/otp.component';
 import { RegisterComponent } from './register/register.component';
+import { BsModalRef, BsModalService, ModalOptions } from 'ngx-bootstrap/modal';
+
 @Component({
   selector: 'app-bookthehub',
   templateUrl: './bookthehub.component.html',
@@ -17,6 +18,7 @@ export class BookthehubComponent implements OnInit {
   bsModalRef: BsModalRef;
   bookForm: FormGroup;
   message: any;
+
   ngOnInit(): void {
     this.bookForm = this.fb.group({
       phone: ['']

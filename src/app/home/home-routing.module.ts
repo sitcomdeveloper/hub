@@ -9,6 +9,8 @@ import { RentalsComponent } from './rentals/rentals.component';
 import { DriveComponent } from './drive/drive.component';
 import { SelectComponent } from './select/select.component';
 import { FeaturesComponent } from './features/features.component';
+import { SelecthubComponent } from './selecthub/selecthub.component';
+import { UserprofileComponent } from './userprofile/userprofile.component';
 
 const routes: Routes = [
   {
@@ -19,11 +21,13 @@ const routes: Routes = [
     ]
   },
   { path: 'book', component: BookthehubComponent, children: [
-    // {path: 'verify', component: OtpComponent},
   ]},
+
   { path: 'drive', component: DriveComponent },
   { path: 'select', component: SelectComponent },
   { path: 'features', component: FeaturesComponent },
+  { path: 'selecthub', component: SelecthubComponent },
+  { path: 'userprofile', component: UserprofileComponent },
 ]
 
 @NgModule({

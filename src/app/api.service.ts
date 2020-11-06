@@ -30,4 +30,12 @@ export class ApiService {
   updateuserData(updteusrdta: any): Observable<any> {
     return this.http.post<any>(API_URL + 'users/updateuserdata', updteusrdta);
   }
+  // get user data
+  getuserdta(): Observable<any> {
+    return this.http.get<any>(API_URL + 'users/userprofile');
+  }
+  // logout
+  logout(cleardetails: any): Observable<any> {
+    return this.http.post<any>(API_URL + 'users/logout', cleardetails);
+  }
 }

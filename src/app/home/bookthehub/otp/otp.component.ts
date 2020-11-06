@@ -1,5 +1,6 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { ApiService } from 'src/app/api.service';
 @Component({
@@ -22,7 +23,7 @@ export class OtpComponent implements OnInit {
   assign: any;
   getuniqueDetails: any;
   bindData: any;
-  constructor(private bsmodal: BsModalRef, private apiService: ApiService, private fb: FormBuilder) { }
+  constructor(private bsmodal: BsModalRef, private apiService: ApiService, private fb: FormBuilder, private router: Router) { }
 
   ngOnInit(): void {
      // code for receiving details
@@ -66,6 +67,12 @@ export class OtpComponent implements OnInit {
     this.apiService.otpVerifcation(otpvrify).subscribe(otpverifyRes => {
       this.getotpverifyRes = otpverifyRes;
       this.enterotpForm.reset();
+      if(this.getotpverifyRes.message === 'OTP verified') {
+        this.router.navigateByUrl('home/selecthub');
+      }
+      // else {
+      //   this.router.navigateByUrl('home/book');
+      // }
       console.log('getotpverifyRes', otpverifyRes);
     })
   }
