@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ModalModule, BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { HomeRoutingModule } from './home-routing.module';
 import { HomeComponent } from './home.component';
 import { CitytaxiComponent } from './citytaxi/citytaxi.component';
@@ -27,7 +28,7 @@ import { UserprofileComponent } from './userprofile/userprofile.component';
 @NgModule({
   declarations: [HomeComponent, CitytaxiComponent, OutstationComponent, RentalsComponent, HeaderComponent, BookthehubComponent, OtpComponent, FooterComponent, DriveComponent, SelectComponent, DownloadComponent, FeaturesComponent, FeaturescitytaxiComponent, FeaturesoutstationComponent, FeaturesrentalsComponent, RegisterComponent, SelecthubComponent, SelecthubdailyridesComponent, UserprofileComponent],
   imports: [
-    CommonModule, HomeRoutingModule, FormsModule, ReactiveFormsModule
+    CommonModule, HomeRoutingModule, FormsModule, ReactiveFormsModule, ModalModule.forRoot(),
   ],
   entryComponents: [OtpComponent, RegisterComponent],
 })
