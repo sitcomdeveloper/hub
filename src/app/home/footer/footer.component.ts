@@ -15,4 +15,13 @@ export class FooterComponent implements OnInit {
   bookthehub() {
     this.router.navigateByUrl('home/book');
   }
+  aboutus() {
+    this.router.navigateByUrl('home/about-us');
+  }
+  contactus() {
+    this.router.navigateByUrl('home/contact-us');
+  }
+  privacypolicy() {
+    this.router.navigateByUrl('home/privacy-policy')
+  }
 }

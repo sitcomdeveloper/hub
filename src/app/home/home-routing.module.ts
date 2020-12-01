@@ -11,6 +11,9 @@ import { SelectComponent } from './select/select.component';
 import { FeaturesComponent } from './features/features.component';
 import { SelecthubComponent } from './selecthub/selecthub.component';
 import { UserprofileComponent } from './userprofile/userprofile.component';
+import { AboutusComponent } from './aboutus/aboutus.component';
+import { ContactusComponent } from './contactus/contactus.component';
+import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
 
 const routes: Routes = [
   {
@@ -20,14 +23,19 @@ const routes: Routes = [
       { path: 'rentals', component: RentalsComponent },
     ]
   },
-  { path: 'book', component: BookthehubComponent, children: [
-  ]},
+  {
+    path: 'book', component: BookthehubComponent, children: [
+    ]
+  },
 
   { path: 'drive', component: DriveComponent },
   { path: 'select', component: SelectComponent },
   { path: 'features', component: FeaturesComponent },
   { path: 'selecthub', component: SelecthubComponent },
   { path: 'userprofile', component: UserprofileComponent },
+  { path: 'about-us', component: AboutusComponent },
+  { path: 'contact-us', component: ContactusComponent },
+  { path: 'privacy-policy', component: PrivacypolicyComponent }
 ]
 
 @NgModule({

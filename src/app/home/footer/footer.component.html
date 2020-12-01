@@ -409,21 +409,22 @@
           </div>
           <div class="row main-links clearfix">
               <div class="title">Discover AutoHub</div>
-              <a id="desktop_footer_about_us" class="event-elem pull-left" href="javascript:void(0);">About AutoHub</a>
-              <a id="desktop_footer_careers" class="event-elem pull-left" href="javascript:void(0);">Careers</a>
-              <a href="javascript:void(0);" class="pull-left">Offers</a>
-              <a href="javascript:void(0);" class="pull-left">Contact Us</a>
-              <a href="javascript:void(0);" class="pull-left">Media Center</a>
+              <a id="desktop_footer_about_us" class="event-elem pull-left" routerLink="home" (click)="aboutus()">About AutoHub</a>
+              <!-- <a id="desktop_footer_careers" class="event-elem pull-left" href="javascript:void(0);">Careers</a> -->
+              <!-- <a  class="pull-left">Offers</a> -->
+              <a routerLink="home" (click)="contactus()" class="pull-left">Contact Us</a>
+              <!-- <a href="javascript:void(0);" class="pull-left">Media Center</a> -->
               <a routerLink="home" class="pull-right last" (click)="bookthehub()">Book a ride</a>
-              <a href="javascript:void(0);" class="pull-right">Become a driver</a>
+              <!-- <a href="javascript:void(0);" class="pull-right">Become a driver</a> -->
+              <a routerLink="home" (click)="privacypolicy()">Privacy Policy</a>
           </div>
-          <div class="row tc-links clearfix">
+          <!-- <div class="row tc-links clearfix">
               <div class="logo-container"><a href="javascript:void(0);"><img src="assets/www.olacabs.com/webstatic/img/logoautohub.jpg"></a></div>
               <a href="javascript:void(0);">Notices</a>
               <a id="desktop_footer_tnc" class="event-elem" href="javascript:void(0);">Terms &amp; Conditions</a>
               <a href="javascript:void(0);">Privacy Policy</a>
               <div class="copyrights">Copyright © 2020 Sitcom Technology Pvt. Ltd. All rights reserved.</div>
-          </div>
+          </div> -->
       </div>
   </div>
 </footer> <!--/footer-->
