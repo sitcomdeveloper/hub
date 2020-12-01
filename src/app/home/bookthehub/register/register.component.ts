@@ -1,5 +1,5 @@
 import { Component, EventEmitter, Input, OnInit, Output } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { ApiService } from 'src/app/api.service';
 import { BsModalRef, BsModalService } from 'ngx-bootstrap/modal';
 import { Router } from '@angular/router';
@@ -19,7 +19,7 @@ export class RegisterComponent implements OnInit {
   getUpdateuserres: any;
   getuniqueDetails: any;
   bindData: any;
-
+  // submitted = true;
   constructor(private apiService: ApiService, private fb: FormBuilder, private bsmodal: BsModalRef, private router: Router, private modalService: BsModalService) { }
   bsModalRef: BsModalRef;
   ngOnInit(): void {
@@ -29,7 +29,7 @@ export class RegisterComponent implements OnInit {
 
     this.assign = this.assignfetchotp
     this.enterotpForm = this.fb.group({
-      fullname: [''],
+      fullname: ['', [Validators.required]],
       email: ['']
     })
   }
@@ -60,4 +60,7 @@ export class RegisterComponent implements OnInit {
     // this.userDetails();
     // });
     }
+    // get f() {
+    //   return this.enterotpForm.controls;
+    // }
   }

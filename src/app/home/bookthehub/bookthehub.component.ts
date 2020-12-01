@@ -1,5 +1,5 @@
 import { Component,OnInit,  } from '@angular/core';
-import { FormBuilder, FormGroup } from '@angular/forms';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
 import { ApiService } from 'src/app/api.service';
 import { OtpComponent } from './otp/otp.component';
@@ -14,17 +14,18 @@ import { BsModalRef, BsModalService, ModalOptions } from 'ngx-bootstrap/modal';
 export class BookthehubComponent implements OnInit {
   title: any;
   fetchotp: any;
-  constructor(private modalService: BsModalService, private fb: FormBuilder, private apiService: ApiService, private router:Router) { }
+  constructor(private modalService: BsModalService, private fb: FormBuilder, private apiService: ApiService, private router: Router) { }
   bsModalRef: BsModalRef;
   bookForm: FormGroup;
   message: any;
-
+  submitted = false;
   ngOnInit(): void {
     this.bookForm = this.fb.group({
-      phone: ['']
+      phone: ['', [Validators.required]]
     })
   }
   sendOtp() {
+    if (this.bookForm.valid) {
     const usrlogin = {
       phone: this.bookForm.value.phone
     };
@@ -59,8 +60,14 @@ export class BookthehubComponent implements OnInit {
         }
       console.log('fetchotp', getotp);
     })
+  } else {
+    this.submitted = true;
+  }
   }
   routetoHome() {
     this.router.navigateByUrl('home');
+  }
+  get f() {
+    return this.bookForm.controls;
   }
 }

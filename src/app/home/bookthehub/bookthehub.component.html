@@ -9,7 +9,11 @@
                         <span class="fa fa-mobile" aria-hidden="true"></span>
                         <input class="form-control itemformcontrol"
                         name="Phone" type="number" formControlName="phone" placeholder="Enter Your number"
-                        appPhoneMask>
+                        appPhoneMask [ngClass]="{ 'is-invalid': submitted && f.phone.errors,'form-control':true}" aria-required="true">
+
+                    </div>
+                    <div *ngIf="submitted && f.phone.errors" class="invalid-feedback">
+                      <div *ngIf="f.phone.errors.required" class="validate-msg">Phone Number is required</div>
                     </div>
                     <div class="message">{{this.fetchotp?.message}}</div>
                     <div class="main-two-w3ls">
