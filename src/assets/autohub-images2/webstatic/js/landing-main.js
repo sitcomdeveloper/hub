@@ -175,8 +175,8 @@ $(document).ready(function()
 		variableWidth: true,
 		autoplay: true,
   		autoplaySpeed: 2000,
-		prevArrow: '<div class="slick-prev"><img src="assets/www.olacabs.com/webstatic/img/arrowhead-left.png"></div>',
-    nextArrow: '<div class="slick-next"><img src="assets/www.olacabs.com/webstatic/img/arrowhead-right.png"></div>',
+		prevArrow: '<div class="slick-prev"><img src="assets/autohub-images2/webstatic/img/arrowhead-left.png"></div>',
+    nextArrow: '<div class="slick-next"><img src="assets/autohub-images2/webstatic/img/arrowhead-right.png"></div>',
 		responsive: [
 		{
 			breakpoint: 768,

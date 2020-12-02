@@ -6,11 +6,10 @@
                 <p>Welcome to AutoHub</p>
                 <form [formGroup]="bookForm">
                     <div class="form-left-to-w3l">
-                        <span class="fa fa-mobile" aria-hidden="true"></span>
+                        <span class="fa fa-mobile" aria-hidden="true"><sup>*</sup></span>
                         <input class="form-control itemformcontrol"
                         name="Phone" type="number" formControlName="phone" placeholder="Enter Your number"
                         appPhoneMask [ngClass]="{ 'is-invalid': submitted && f.phone.errors,'form-control':true}" aria-required="true">
-
                     </div>
                     <div *ngIf="submitted && f.phone.errors" class="invalid-feedback">
                       <div *ngIf="f.phone.errors.required" class="validate-msg">Phone Number is required</div>
@@ -34,7 +33,7 @@
             <div class="img-right-side">
                 <h3>Make your way with the AutoHub</h3>
                 <!-- <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget</p> -->
-                <img src="assets/www.olacabs.com/webstatic/img/logoautohub.jpg" class="img-fluid" alt="">
+                <img src="assets/autohub-images2/webstatic/img/logoautohub.jpg" class="img-fluid" alt="">
             </div>
         </div>
     </div>

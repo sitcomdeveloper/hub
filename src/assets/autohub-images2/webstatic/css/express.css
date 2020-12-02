@@ -61,9 +61,9 @@ table {
 @font-face {
   font-family: 'Gentona';
   src: url("../../index.html");
-  src: url("src/assets/www.olacabs.com/webstatic/fonts/Gentona-Medium.woff") format("woff"), url("../fonts/Gentona-Medium.otf"), url("../fonts/Gentona-Medium.ttf") format("truetype");
+  src: url("src/assets/autohub-images2/webstatic/fonts/Gentona-Medium.woff") format("woff"), url("../fonts/Gentona-Medium.otf"), url("../fonts/Gentona-Medium.ttf") format("truetype");
   font-weight: 500;
-  src: url("src/assets/www.olacabs.com/webstatic/fonts/Gentona-Medium.woff")
+  src: url("src/assets/autohub-images2/webstatic/fonts/Gentona-Medium.woff")
 }
 
 @font-face {

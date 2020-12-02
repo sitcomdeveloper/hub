@@ -4,3 +4,8 @@
   margin-left: 285px;
   margin-bottom: 5px; */
 }
+.validate-msg {
+  color: red;
+  /* margin-bottom: 13px; */
+  padding-top: 0px;
+}

@@ -19,14 +19,14 @@ export class CitytaxiComponent implements OnInit {
     body.appendChild(script);
   }
   ngOnInit(): void {
-    this.loadScript("assets/www.olacabs.com/webstatic/js/jquery-3.2.1.min.js");
-    this.loadScript("assets/www.olacabs.com/webstatic/js/landing-main.js");
-    this.loadScript("assets/www.olacabs.com/webstatic/js/routes.js");
-    this.loadScript("assets/www.olacabs.com/webstatic/js/send-events.js");
-    this.loadScript("assets/www.olacabs.com/webstatic/js/seo.js");
-    this.loadScript("assets/www.olacabs.com/webstatic/js/share-pass.js");
-    this.loadScript("assets/www.olacabs.com/webstatic/js/share.js");
-    this.loadScript("assets/www.olacabs.com/webstatic/js/slick.js");
+    this.loadScript("assets/autohub-images2/webstatic/js/jquery-3.2.1.min.js");
+    this.loadScript("assets/autohub-images2/webstatic/js/landing-main.js");
+    this.loadScript("assets/autohub-images2/webstatic/js/routes.js");
+    this.loadScript("assets/autohub-images2/webstatic/js/send-events.js");
+    this.loadScript("assets/autohub-images2/webstatic/js/seo.js");
+    this.loadScript("assets/autohub-images2/webstatic/js/share-pass.js");
+    this.loadScript("assets/autohub-images2/webstatic/js/share.js");
+    this.loadScript("assets/autohub-images2/webstatic/js/slick.js");
   }
 
 }

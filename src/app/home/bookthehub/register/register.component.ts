@@ -19,13 +19,13 @@ export class RegisterComponent implements OnInit {
   getUpdateuserres: any;
   getuniqueDetails: any;
   bindData: any;
-  // submitted = true;
+  submitted = false;
   constructor(private apiService: ApiService, private fb: FormBuilder, private bsmodal: BsModalRef, private router: Router, private modalService: BsModalService) { }
   bsModalRef: BsModalRef;
   ngOnInit(): void {
-     // code for receiving details
-     this.getuniqueDetails = JSON.parse(window.sessionStorage.getItem('uniquedtls'));
-     this.bindData = this.getuniqueDetails;
+    // code for receiving details
+    this.getuniqueDetails = JSON.parse(window.sessionStorage.getItem('uniquedtls'));
+    this.bindData = this.getuniqueDetails;
 
     this.assign = this.assignfetchotp
     this.enterotpForm = this.fb.group({
@@ -37,30 +37,38 @@ export class RegisterComponent implements OnInit {
     this.bsmodal.hide();
   }
   updtusrUsr() {
-    const updteusrdta = {
-      userID: this.bindData?.userID,
-      name: this.enterotpForm.value.fullname,
-      email: this.enterotpForm.value.email,
-      phone: this.bindData?.phone,
-    }
-    this.apiService.updateuserData(updteusrdta).subscribe(updateuserRes => {
-      this.getUpdateuserres = updateuserRes;
-      console.log('getUpdateuserres', updateuserRes);
-    })
-    const initialState = {
-      title: 'Enter the OTP',
-      // assignfetchotp: this.fetchotp
-      // this.assign,
+    if (this.enterotpForm.valid) {
+      const updteusrdta = {
+        userID: this.bindData?.userID,
+        name: this.enterotpForm.value.fullname,
+        email: this.enterotpForm.value.email,
+        phone: this.bindData?.phone,
+      }
+      this.apiService.updateuserData(updteusrdta).subscribe(updateuserRes => {
+        this.getUpdateuserres = updateuserRes;
+        setTimeout(() => {
+          this.bsmodal.hide();
+        },
+          1000);
+        console.log('getUpdateuserres', updateuserRes);
+      })
+      const initialState = {
+        title: 'Enter the OTP',
+        // assignfetchotp: this.fetchotp
+        // this.assign,
 
-    };
-    this.bsModalRef = this.modalService.show(OtpComponent, Object.assign({ backdrop: 'static', show: true }, { class: 'modal750', initialState }));
-    this.bsModalRef.content.closeBtnName = 'Cancel';
-    // this.bsmodal.hide();
-    // this.bsModalRef.content.clddata.subscribe(data => {
-    // this.userDetails();
-    // });
+      };
+      this.bsModalRef = this.modalService.show(OtpComponent, Object.assign({ backdrop: 'static', show: true }, { class: 'modal750', initialState }));
+      this.bsModalRef.content.closeBtnName = 'Cancel';
+      // this.bsmodal.hide();
+      // this.bsModalRef.content.clddata.subscribe(data => {
+      // this.userDetails();
+      // });
+    } else {
+      this.submitted = true;
     }
-    // get f() {
-    //   return this.enterotpForm.controls;
-    // }
   }
+  get f() {
+    return this.enterotpForm.controls;
+  }
+}

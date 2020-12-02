@@ -26,10 +26,10 @@ export class OtpComponent implements OnInit {
   constructor(private bsmodal: BsModalRef, private apiService: ApiService, private fb: FormBuilder, private router: Router) { }
 
   ngOnInit(): void {
-     // code for receiving details
-     this.getuniqueDetails = JSON.parse(window.sessionStorage.getItem('uniquedtls'));
-     this.bindData = this.getuniqueDetails;
-     console.log('parse', this.bindData);
+    // code for receiving details
+    this.getuniqueDetails = JSON.parse(window.sessionStorage.getItem('uniquedtls'));
+    this.bindData = this.getuniqueDetails;
+    console.log('parse', this.bindData);
 
     // this.assign = this.assignfetchotp
     // get otp
@@ -67,9 +67,14 @@ export class OtpComponent implements OnInit {
     this.apiService.otpVerifcation(otpvrify).subscribe(otpverifyRes => {
       this.getotpverifyRes = otpverifyRes;
       this.enterotpForm.reset();
-      if(this.getotpverifyRes.message === 'OTP verified') {
+      if (this.getotpverifyRes.message === 'OTP verified') {
         this.router.navigateByUrl('home/selecthub');
       }
+      setTimeout(() => {
+        this.bsmodal.hide();
+      },
+        1000);
+
       // else {
       //   this.router.navigateByUrl('home/book');
       // }

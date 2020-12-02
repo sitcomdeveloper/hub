@@ -29,14 +29,14 @@
             ],
             "scripts": [
               "node_modules/jquery/dist/jquery.min.js",
-              "src/assets/www.olacabs.com/webstatic/js/jquery-3.2.1.min.js",
-              "src/assets/www.olacabs.com/webstatic/js/landing-main.js",
-              "src/assets/www.olacabs.com/webstatic/js/routes.js",
-              "src/assets/www.olacabs.com/webstatic/js/send-events.js",
-              "src/assets/www.olacabs.com/webstatic/js/seo.js",
-              "src/assets/www.olacabs.com/webstatic/js/share-pass.js",
-              "src/assets/www.olacabs.com/webstatic/js/share.js",
-              "src/assets/www.olacabs.com/webstatic/js/slick.js"
+              "src/assets/autohub-images2/webstatic/js/jquery-3.2.1.min.js",
+              "src/assets/autohub-images2/webstatic/js/landing-main.js",
+              "src/assets/autohub-images2/webstatic/js/routes.js",
+              "src/assets/autohub-images2/webstatic/js/send-events.js",
+              "src/assets/autohub-images2/webstatic/js/seo.js",
+              "src/assets/autohub-images2/webstatic/js/share-pass.js",
+              "src/assets/autohub-images2/webstatic/js/share.js",
+              "src/assets/autohub-images2/webstatic/js/slick.js"
             ]
           },
           "configurations": {

@@ -30,7 +30,7 @@ img{max-width:100%;}
 body{
 	font-family: 'Montserrat', sans-serif;
 	margin:0;
-	/* background: url(/assets/www.olacabs.com/webstatic/bg.jpg) no-repeat; */
+	/* background: url(/assets/autohub-images2/webstatic/bg.jpg) no-repeat; */
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -136,7 +136,7 @@ input[type="submit"] {
     -ms-transition: 0.5s all;
 }
 input[type="submit"]:hover {
-    background: #ff4f81;
+    background: forestgreen;
     color: #fff;
 	transition:0.5s all;
 	-webkit-transition:0.5s all;
