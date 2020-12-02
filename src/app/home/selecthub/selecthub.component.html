@@ -1,39 +1,31 @@
-<div class="container-fluid">
-  <div class="row col-md-3">
+<div class="container">
+  <div class="row col-md-6">
     <div class="img-left-side">
       <img src="assets/autohub-images2/webstatic/img/logoautohub.jpg" class="img-fluid" alt="">
-  </div>
-  <div class="ola-booking-wrapper max-width">
-    <div class="ola-booking">
-        <div class="booking-tab">
-            <div class="tab-btn-wrapper text-center nav nav-tabs" style="padding: 28px 0px 0px 0px;">
+      <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#home">Daily rides</a></li>
+        <li><a data-toggle="tab" href="#menu1">Outstation</a></li>
+        <li><a data-toggle="tab" href="#menu2">Rentals</a></li>
+        <li><i class="fa fa-user-circle-o fa-2x" aria-hidden="true" (click)="userprofile()"></i></li>
+      </ul>
 
-                    <!-- <a href="#ctytxi" data-toggle="tab" class="tab tab-active">City Taxi</a> -->
-                    <a routerLink="home" data-toggle="tab" class="tab tab-active">CityTaxi</a>
-            </div>
-            <div class="tab-btn-wrapper text-center" style="padding: 28px 0px 0px 0px;">
-
-                    <!-- <a href="#otsttion" data-toggle="tab" class="tab">Outstation</a> -->
-                    <a routerLink="home"  data-toggle="tab" class="tab">Outstation</a>
-            </div>
-            <div class="tab-btn-wrapper text-center" style="padding: 28px 0px 0px 0px;">
-
-                    <!-- <a href="#rentls" data-toggle="tab" class="tab">Rentals</a> -->
-                    <a routerLink="home"  data-toggle="tab" class="tab">Rentals</a>
-            </div>
-
+      <div class="tab-content">
+        <div id="home" class="tab-pane fade in active">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua.</p>
         </div>
-        <i class="fa fa-user" aria-hidden="true" (click)="userprofile()"></i>
-        <!-- <iframe src="https://bookingwidget.olacabs.com/" class="city-iframe"></iframe> -->
+        <div id="menu1" class="tab-pane fade">
+          <p>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+          </p>
+        </div>
+        <div id="menu2" class="tab-pane fade">
+          <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem
+            aperiam.</p>
+        </div>
+      </div>
     </div>
   </div>
-
-  </div>
-  <div class="row col-md-3">
-
-  </div>
   <div class="row col-md-6">
-
-<img class="afterlogin" src="assets/autohub-images/afterlogin.jpg">
+    <img class="afterlogin" src="assets/autohub-images/afterlogin.jpg">
   </div>
 </div>

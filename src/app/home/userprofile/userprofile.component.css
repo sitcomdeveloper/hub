@@ -1,0 +1,27 @@
+img.userprofile {
+  max-width: 131%;
+height: 600px;
+}
+.user-details {
+  padding: 50px;
+}
+.user-image {
+  padding-left: 106px;
+}
+.user-name {
+  padding-left: 88px;
+}
+.user-email {
+  padding-left: 55px;
+}
+.user-number {
+  padding-left: 65px;
+}
+.logout {
+  padding-left: 183px;
+  padding-top: 94px;
+}
+img.user-profile.img-fluid {
+  padding-left: 111px;
+  max-height: 117px;
+}

@@ -5,3 +5,8 @@ img.img-fluid {
   max-width: 122px;
   margin-left: 180px;
 }
+i.fa.fa-user-circle-o {
+  padding-top: 1px;
+  cursor: pointer;
+  padding-left: 166px;
+}
