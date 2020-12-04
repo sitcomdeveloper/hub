@@ -18,8 +18,9 @@ height: 600px;
   padding-left: 65px;
 }
 .logout {
-  padding-left: 183px;
+  padding-left: 118px;
   padding-top: 94px;
+  cursor: pointer;
 }
 img.user-profile.img-fluid {
   padding-left: 111px;
