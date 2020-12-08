@@ -66,6 +66,8 @@ export class OtpComponent implements OnInit {
     }
     this.apiService.otpVerifcation(otpvrify).subscribe(otpverifyRes => {
       this.getotpverifyRes = otpverifyRes;
+      window.sessionStorage.setItem('tokenn', JSON.stringify(otpverifyRes.token));
+      console.log('stringifyToken', JSON.stringify(otpverifyRes.token));
       this.enterotpForm.reset();
       if (this.getotpverifyRes.message === 'OTP verified') {
         this.router.navigateByUrl('home/selecthub');

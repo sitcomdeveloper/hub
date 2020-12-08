@@ -25,13 +25,17 @@ import { UserprofileComponent } from './userprofile/userprofile.component';
 import { AboutusComponent } from './aboutus/aboutus.component';
 import { ContactusComponent } from './contactus/contactus.component';
 import { PrivacypolicyComponent } from './privacypolicy/privacypolicy.component';
-
+import { HTTP_INTERCEPTORS } from '@angular/common/http';
+import { AuthInterceptor } from '../auth.interceptor';
 
 
 @NgModule({
   declarations: [HomeComponent, CitytaxiComponent, OutstationComponent, RentalsComponent, HeaderComponent, BookthehubComponent, OtpComponent, FooterComponent, DriveComponent, SelectComponent, DownloadComponent, FeaturesComponent, FeaturescitytaxiComponent, FeaturesoutstationComponent, FeaturesrentalsComponent, RegisterComponent, SelecthubComponent, SelecthubdailyridesComponent, UserprofileComponent, AboutusComponent, ContactusComponent, PrivacypolicyComponent],
   imports: [
     CommonModule, HomeRoutingModule, FormsModule, ReactiveFormsModule, ModalModule.forRoot(),
+  ],
+  providers: [
+    { provide: HTTP_INTERCEPTORS, useClass: AuthInterceptor, multi: true },
   ],
   entryComponents: [OtpComponent, RegisterComponent],
 })

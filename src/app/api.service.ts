@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 const API_URL = environment.API_URL;
@@ -32,7 +32,8 @@ export class ApiService {
   }
   // get user data
   getuserdta(): Observable<any> {
-    return this.http.get<any>(API_URL + 'users/userprofile');
+    var reqHeader = new HttpHeaders({'Content-Type': 'application/x-www-urlencoded', 'No-Auth': 'True' });
+    return this.http.get<any>(API_URL + 'users/userprofile', {headers: reqHeader,});
   }
   // logout
   logout(cleardetails: any): Observable<any> {
