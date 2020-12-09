@@ -2,6 +2,7 @@ import { Injectable } from '@angular/core';
 import { environment } from 'src/environments/environment';
 import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Observable } from 'rxjs';
+// import {Http, Headers, RequestOptionsArgs } from "@angular/http";
 
 const API_URL = environment.API_URL;
 @Injectable({
@@ -32,11 +33,18 @@ export class ApiService {
   }
   // get user data
   getuserdta(): Observable<any> {
-    var reqHeader = new HttpHeaders({'Content-Type': 'application/x-www-urlencoded', 'No-Auth': 'True' });
-    return this.http.get<any>(API_URL + 'users/userprofile', {headers: reqHeader,});
+    // let t= window.sessionStorage.getItem('tokenn');
+    // let headers_object = new HttpHeaders({
+    //  'Content-Type': 'application/json',
+    //    'Authorization': "Bearer "+t
+    // });
+    // return this.http.get<any>(API_URL + 'users/userprofile');
+    var reqHeader = new HttpHeaders({'Content-Type': 'application/json' });
+return this.http.get<any>(API_URL + 'users/userprofile', {headers: reqHeader,});
   }
   // logout
   logout(cleardetails: any): Observable<any> {
+
     return this.http.post<any>(API_URL + 'users/logout', cleardetails);
   }
 }

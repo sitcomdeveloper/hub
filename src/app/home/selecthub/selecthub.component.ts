@@ -17,10 +17,6 @@ export class SelecthubComponent implements OnInit {
   ngOnInit(): void {
   }
   userprofile() {
-  //   var reqHeader = new HttpHeaders({
-  //     'Content-Type': 'application/json',
-  //     'Authorization': 'Bearer ' + JSON.parse(sessionStorage.getItem('token'))
-  //  });
   this.router.navigateByUrl('home/userprofile')
     this.apiService.getuserdta().subscribe(userData => {
       this.getuserData = userData;
