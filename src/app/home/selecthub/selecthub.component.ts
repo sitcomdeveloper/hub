@@ -12,15 +12,18 @@ const API_URL = environment.API_URL;
 })
 export class SelecthubComponent implements OnInit {
   getuserData: any;
+  fetchuserData: any;
   constructor(private router: Router, private apiService: ApiService, private http: HttpClient) { }
 
   ngOnInit(): void {
   }
   userprofile() {
   this.router.navigateByUrl('home/userprofile')
-    this.apiService.getuserdta().subscribe(userData => {
-      this.getuserData = userData;
-      console.log('getuserData',userData);
+    this.apiService.getuserdta().subscribe(userautohubData => {
+      this.getuserData = userautohubData;
+      this.fetchuserData = this.getuserData.userData;
+      console.log('fetchuserData', this.getuserData.userData);
+      window.sessionStorage.setItem('fetchingDetails', JSON.stringify(this.getuserData.userData));
     })
   }
 }

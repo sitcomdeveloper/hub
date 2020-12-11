@@ -1,11 +1,13 @@
 <div class="container">
   <div class="row col-md-6">
+
     <img src="assets/autohub-images2/webstatic/img/logoautohub.jpg" class="user-profile img-fluid" alt="">
-    <div class="user-details">
+    <div class="user-details" *ngFor = "let fetchingData of this.parsedftecheddata">
       <div class="user-image"><i class="fa fa-user-o" aria-hidden="true"></i></div>
-      <div class="user-name">Admin</div>
-      <div class="user-email">abc@gmail.com</div>
-      <div class="user-number">4569874454</div>
+      <div class="user-name">{{fetchingData?.name}}</div>
+      <div class="user-email">{{fetchingData?.email_id}}</div>
+      <div class="user-number">{{fetchingData?.phone}}</div>
+      <div class="message">{{this.signout?.message}}</div>
     </div>
     <div class="logout">
       <i class="fa fa-sign-out" aria-hidden="true" (click)="logout()"><span class="logout-text">Logout</span></i>

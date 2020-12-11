@@ -33,18 +33,18 @@ export class ApiService {
   }
   // get user data
   getuserdta(): Observable<any> {
-    // let t= window.sessionStorage.getItem('tokenn');
-    // let headers_object = new HttpHeaders({
-    //  'Content-Type': 'application/json',
-    //    'Authorization': "Bearer "+t
-    // });
-    // return this.http.get<any>(API_URL + 'users/userprofile');
-    var reqHeader = new HttpHeaders({'Content-Type': 'application/json' });
+    var reqHeader = new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + JSON.parse(sessionStorage.getItem('tokenn'))
+     });
 return this.http.get<any>(API_URL + 'users/userprofile', {headers: reqHeader,});
   }
   // logout
   logout(cleardetails: any): Observable<any> {
-
-    return this.http.post<any>(API_URL + 'users/logout', cleardetails);
+    var reqHeader = new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Authorization': 'Bearer ' + JSON.parse(sessionStorage.getItem('tokenn'))
+     });
+    return this.http.post<any>(API_URL + 'users/logout', cleardetails, {headers: reqHeader,});
   }
 }

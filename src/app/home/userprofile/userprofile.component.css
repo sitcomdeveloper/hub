@@ -26,3 +26,10 @@ img.user-profile.img-fluid {
   padding-left: 111px;
   max-height: 117px;
 }
+.message {
+  color: green;
+  text-align: center;
+  margin-left: -170px;
+  margin-bottom: 5px;
+  margin-top: 50px;
+}
