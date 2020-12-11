@@ -1,4 +1,4 @@
-$(document).ready(function() {   
+$(document).ready(function() {
 	// Navigation Menu
     $('.menu-icon').click(function(e) {
         e.preventDefault();
@@ -160,13 +160,13 @@ $(document).ready(function() {
     var lesstext = "Show less";
     $('.indiv-blog-tab .info').each(function() {
         var content = $(this).text();
-        console.log(content);
-        console.log(content.length);
+        // console.log(content);
+        // console.log(content.length);
         // console.log("cha" ,$(this).text().length);
         if(content.length > showChar) {
 
             var c = content.substr(0, showChar);
-            console.log(c);
+            // console.log(c);
             var h = content.substr(showChar-1, content.length - showChar);
 
             var html = c + '<span class="moreellipses">' + ellipsestext+ '&nbsp;</span><span class="morecontent"><span>' + h + '</span>&nbsp;&nbsp;<a href="" class="morelink">' + moretext + '</a></span>';
@@ -241,7 +241,7 @@ $(document).ready(function() {
         $('.footer-expand-link').removeClass('hide');
         click_counter = 0;
     });
-    
+
     //Footer country select
     $('.country-select').click(function(e){
         $('.country-options').removeClass('hide');

@@ -203,7 +203,7 @@ $(document).ready(function()
 	$('.footer-expand-link').click(function(e){
 		e.preventDefault();
 		click_counter++;
-		console.log('click counter',click_counter);
+		// console.log('click counter',click_counter);
 		// $(this).find('.footer-link-msg').toggleClass('hide');
 		$('.footer-hide-link').removeClass('hide');
 		$('.footer-expanded-view-1').removeClass('hide');

@@ -29,23 +29,8 @@ export class OtpComponent implements OnInit {
     // code for receiving details
     this.getuniqueDetails = JSON.parse(window.sessionStorage.getItem('uniquedtls'));
     this.bindData = this.getuniqueDetails;
-    console.log('parse', this.bindData);
+    // console.log('parse', this.bindData);
 
-    // this.assign = this.assignfetchotp
-    // get otp
-    // if (this.sendotp === 'sendotp') {
-    //   this.getOtp = true;
-    //   this.assign = this.assignfetchotp
-    //   console.log('a', this.assign);
-    // } else {
-    //   this.getOtp = false;
-    // }
-    // // register user
-    // if (this.register === 'register') {
-    //   this.registerUser = true;
-    // } else {
-    //   this.registerUser = false;
-    // }
     this.enterotpForm = this.fb.group({
       otp: [''],
       otp1: [''],
@@ -67,7 +52,7 @@ export class OtpComponent implements OnInit {
     this.apiService.otpVerifcation(otpvrify).subscribe(otpverifyRes => {
       this.getotpverifyRes = otpverifyRes;
       window.sessionStorage.setItem('tokenn', JSON.stringify(otpverifyRes.token));
-      console.log('stringifyToken', JSON.stringify(otpverifyRes.token));
+      // console.log('stringifyToken', JSON.stringify(otpverifyRes.token));
       this.enterotpForm.reset();
       if (this.getotpverifyRes.message === 'OTP verified') {
         this.router.navigateByUrl('home/selecthub');
@@ -80,7 +65,7 @@ export class OtpComponent implements OnInit {
       // else {
       //   this.router.navigateByUrl('home/book');
       // }
-      console.log('getotpverifyRes', otpverifyRes);
+      // console.log('getotpverifyRes', otpverifyRes);
     })
   }
   // resend otp
@@ -92,7 +77,7 @@ export class OtpComponent implements OnInit {
     this.apiService.resendOtp(rsendotp).subscribe(resndotpRes => {
       this.getresendotpRes = resndotpRes;
       this.enterotpForm.reset();
-      console.log('getresendotpRes', resndotpRes);
+      // console.log('getresendotpRes', resndotpRes);
     })
   }
   // register user

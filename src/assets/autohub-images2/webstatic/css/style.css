@@ -129,8 +129,8 @@ a:hover, a:focus, a:focus {
 
 .text-center {
   text-align: center;
-  margin-top: 101px;
-    margin-right: 25px;
+  /* margin-top: 101px;
+    margin-right: 25px; */
 }
 
 .disabled {

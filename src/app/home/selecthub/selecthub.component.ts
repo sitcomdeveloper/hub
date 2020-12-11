@@ -18,12 +18,16 @@ export class SelecthubComponent implements OnInit {
   ngOnInit(): void {
   }
   userprofile() {
-  this.router.navigateByUrl('home/userprofile')
+
     this.apiService.getuserdta().subscribe(userautohubData => {
       this.getuserData = userautohubData;
       this.fetchuserData = this.getuserData.userData;
-      console.log('fetchuserData', this.getuserData.userData);
-      window.sessionStorage.setItem('fetchingDetails', JSON.stringify(this.getuserData.userData));
+      // console.log('fetchuserData', this.getuserData.userData);
+      window.sessionStorage.setItem('fetchingDetails', JSON.stringify(this.getuserData.userData))
+
+        if(JSON.parse(sessionStorage.getItem('fetchingDetails'))) {
+          this.router.navigateByUrl('home/userprofile')
+        }
     })
   }
 }

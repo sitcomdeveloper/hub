@@ -18,26 +18,28 @@
 	<input type="text" id="digit-6" name="digit-6" data-previous="digit-5" />
 </form> -->
 <!-- writte otp -->
-<section >
-  <div class="">
-	<form [formGroup] = enterotpForm class="otpForm">
-		<input id="codeBox1" type="number" minlength="1" maxlength="1" formControlName = "otp">
-		<input id="codeBox2" type="number" maxlength="1" formControlName = "otp1">
-		<input id="codeBox3" type="number" maxlength="1" formControlName = "otp2">
-		<input id="codeBox4" type="number" maxlength="1" formControlName = "otp3">
-  </form>
-</div>
-  <div class="text-center">
-    <div class="form-group">
-    <button class="button submit-button itembutton" href="javascript:void(0);" (click)="otpVerify()"
-       >Submit</button>
-    <!-- <button class="button button2 itembutton1" href="javascript:void(0);" (click)=" hideModal()">Cancel</button> -->
-    <button class="button button2 itembutton2" href="javascript:void(0);" (click)="resendOtp()">Resend</button>
-    <!-- otp verify msg -->
-    <div class="message">{{this.getotpverifyRes?.message}}</div>
-    <!-- resend otp mesage -->
-    <div class="message">{{this.getresendotpRes?.message}}</div>
-  </div>
-  </div>
-</section>
 <!-- onkeyup="onKeyUpEvent(1, event)" onfocus="onFocusEvent(1)" -->
+
+<div class="row">
+  <div class="col-md-2"></div>
+  <div class="col-md-8">
+    <section>
+    <form [formGroup] = enterotpForm class="otpForm">
+      <input id="codeBox1" type="number" minlength="1" maxlength="1" formControlName = "otp">
+      <input id="codeBox2" type="number" maxlength="1" formControlName = "otp1">
+      <input id="codeBox3" type="number" maxlength="1" formControlName = "otp2">
+      <input id="codeBox4" type="number" maxlength="1" formControlName = "otp3">
+    </form>
+    <button class="button submit-button itembutton" href="javascript:void(0);" (click)="otpVerify()" style="margin: 113px 0px 0px -145px;"
+    >Submit</button>
+    <!-- style="margin: 113px 0px 0px -257px;" -->
+ <!-- <button class="button button2 itembutton1" href="javascript:void(0);" (click)=" hideModal()">Cancel</button> -->
+ <button class="button button2 itembutton2" href="javascript:void(0);" (click)="resendOtp()" style="margin: 114px 0px 0px 21px;">Resend</button>
+   <!-- otp verify msg -->
+   <div class="message">{{this.getotpverifyRes?.message}}</div>
+   <!-- resend otp mesage -->
+   <div class="message">{{this.getresendotpRes?.message}}</div>
+  </section>
+  </div>
+  <div class="col-md-2"></div>
+</div>

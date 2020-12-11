@@ -14,31 +14,20 @@ export class UserprofileComponent implements OnInit {
   constructor(private router: Router, private apiService: ApiService) { }
 
   ngOnInit(): void {
-    // window.sessionStorage.getItem('fetchingDetails', JSON.stringify(this.getuserData.userData));
     this.parsedftecheddata = JSON.parse(sessionStorage.getItem('fetchingDetails'))
-    console.log('getfetchData', this.parsedftecheddata);
+    // console.log('getfetchData', this.parsedftecheddata);
   }
   logout() {
-    // let t= window.sessionStorage.getItem('tokenn');
-    // let headers_object = new HttpHeaders({
-    //  'Content-Type': 'application/json',
-    //    'Authorization': "Bearer "+ JSON.parse(sessionStorage.getItem('tokenn'))
-    // });
     const cleardetails = {
-      // headers: headers_object
     };
     this.apiService.logout(cleardetails).subscribe(signot => {
       this.signout = signot;
-      console.log('signout',signot);
+      // console.log('signout', signot);
       setTimeout(() => {
         this.router.navigateByUrl('/home');
       },
         1000);
     })
-
+    window.sessionStorage.clear();
   }
 }
-// setTimeout(() => {
-//   this.bsmodal.hide();
-// },
-//   1000);

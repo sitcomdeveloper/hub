@@ -1,8 +1,8 @@
-$(document).ready(function() 
-{ 
+$(document).ready(function()
+{
 	// Navigation Menu
     var w_width = $(window).width();
-    console.log(w_width);
+    // console.log(w_width);
     $('.menu-icon').click(function(e) {
         e.preventDefault();
         $('.body-overlay').removeClass('overlay-hide');
@@ -36,7 +36,7 @@ $(document).ready(function()
         $('.country-options').addClass('hide');
     });
 
-    //Scroll 
+    //Scroll
     $('.secondary-links>a[href^="#"], .express-route').bind('click.smoothscroll',function (e) {
         e.preventDefault();
         var target = this.hash,
@@ -92,7 +92,7 @@ $(document).ready(function()
             $("#"+tab_id).addClass('content-active');
         }
 	});
-    
+
     // Faq see-more
     var curHeight = $('.faq-list').height();
     $('.see-more-btn').click(function(event) {
@@ -109,7 +109,7 @@ $(document).ready(function()
         var ss = $(this).val();
         if(ss > 0)
         {
-            $(this).parents('.indiv-field').addClass('input-complete'); 
+            $(this).parents('.indiv-field').addClass('input-complete');
             $("#pickup").parents('.indiv-field').removeClass('input-disabled');
             $('.search-btn').removeClass('input-disabled');
         }
@@ -165,7 +165,7 @@ $(document).ready(function()
         $('.route-content-active').removeClass('route-content-active');
         $("#"+tab_id).addClass('route-content-active');
     });
-    
+
     // find route back btn
     $('#express-route-back-btn').click(function(event) {
         event.preventDefault();
@@ -204,7 +204,7 @@ $(document).ready(function()
         else
         {
             $(this).siblings().addClass('active-opacity');
-            $('.route-info-wrapper').removeClass('hide');  
+            $('.route-info-wrapper').removeClass('hide');
         }
     });
 

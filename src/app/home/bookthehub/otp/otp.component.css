@@ -49,14 +49,13 @@ section form input:focus, section form input.focus {
 }
 .message{
   color: green;
-  /* text-align: center;
-  margin-left: 285px;
-  margin-bottom: 5px; */
+  margin-top: 128px;
+    margin-right: 11px;
 }
-form.otpForm.ng-untouched.ng-pristine.ng-valid {
+/* form.otpForm.ng-untouched.ng-pristine.ng-valid {
   margin-left: 144px;
-  /* margin-bottom: 149px; */
-}
+
+} */
 .button {
   border: none;
   color: white;

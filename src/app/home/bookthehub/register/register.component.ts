@@ -50,7 +50,7 @@ export class RegisterComponent implements OnInit {
           this.bsmodal.hide();
         },
           1000);
-        console.log('getUpdateuserres', updateuserRes);
+        // console.log('getUpdateuserres', updateuserRes);
       })
       const initialState = {
         title: 'Enter the OTP',

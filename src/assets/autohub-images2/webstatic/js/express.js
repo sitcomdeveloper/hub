@@ -1,8 +1,8 @@
-$(document).ready(function() 
-{ 
+$(document).ready(function()
+{
 	// Navigation Menu
     var w_width = $(window).width();
-    console.log(w_width);
+    // console.log(w_width);
     $('.menu-icon').click(function(e) {
         e.preventDefault();
         $('.body-overlay').removeClass('overlay-hide');
@@ -36,7 +36,7 @@ $(document).ready(function()
         $('.country-options').addClass('hide');
     });
 
-    //Scroll 
+    //Scroll
     $('.secondary-links>a[href^="#"], .express-route').bind('click.smoothscroll',function (e) {
         e.preventDefault();
         var target = this.hash,
@@ -97,10 +97,10 @@ $(document).ready(function()
                 $(video_elem).get(0).currentTime=0;
                 $(video_elem).get(0).play();
             }
-            
+
         }
 	});
-    
+
     // Faq see-more
     var curHeight = $('.faq-list').height();
     $('.see-more-btn').click(function(event) {
@@ -132,7 +132,7 @@ $(document).ready(function()
 
     // $('.auto-complete > ul > li').click(function(event) {
     //     var selected_address = $(this).text();
-    //     var parent = $(this).parents('.auto-complete'); 
+    //     var parent = $(this).parents('.auto-complete');
     //     $(parent).siblings('.pickup_address, .drop_address').val(selected_address);
     //     $(parent).hide(0);
     //     $(parent).siblings('.pickup_address, .drop_address').addClass('input-padd active-opacity');
@@ -144,7 +144,7 @@ $(document).ready(function()
         var ss = $(this).val();
         if(ss > 0)
         {
-            $(this).parents('.indiv-field').addClass('input-complete'); 
+            $(this).parents('.indiv-field').addClass('input-complete');
             $("#pickup").parents('.indiv-field').removeClass('input-disabled');
             $('.search-btn').removeClass('input-disabled');
         }
@@ -158,7 +158,7 @@ $(document).ready(function()
         var drop_val = $('#drop').val();
         if(drop_val == '' || drop_val == null)
         {
-            
+
         }
         else
         {
@@ -171,7 +171,7 @@ $(document).ready(function()
         var source = $('#pickup').val();
         var desti = $('#drop').val();
         $('#pickup').val(desti);
-        $('#drop').val(source); 
+        $('#drop').val(source);
     });
     // Search btn
     $('.search-btn').click(function(event) {
@@ -220,7 +220,7 @@ $(document).ready(function()
         $('.route-content-active').removeClass('route-content-active');
         $("#"+tab_id).addClass('route-content-active');
     });
-    
+
     // find route back btn
     $('#express-route-back-btn').click(function(event) {
         event.preventDefault();
@@ -258,7 +258,7 @@ $(document).ready(function()
         else
         {
             $(this).siblings().addClass('active-opacity');
-            $('.route-info-wrapper').removeClass('hide');  
+            $('.route-info-wrapper').removeClass('hide');
         }
     });
 
