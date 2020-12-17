@@ -61,12 +61,17 @@ export class OtpComponent implements OnInit {
         this.bsmodal.hide();
       },
         1000);
+      console.log('getotpverifyRes', otpverifyRes);
+    },
+    err => {
+      if(err.status === 500 || err.status === 400 || err.status === 401 || err.status === 403)
+      alert('Invalid OTP');
+      this.bsmodal.hide();
+      console.log('error', err);
+     // check error status code is 500, if so, do some action
+    }
+    )
 
-      // else {
-      //   this.router.navigateByUrl('home/book');
-      // }
-      // console.log('getotpverifyRes', otpverifyRes);
-    })
   }
   // resend otp
   resendOtp() {
@@ -77,9 +82,8 @@ export class OtpComponent implements OnInit {
     this.apiService.resendOtp(rsendotp).subscribe(resndotpRes => {
       this.getresendotpRes = resndotpRes;
       this.enterotpForm.reset();
-      // console.log('getresendotpRes', resndotpRes);
+      console.log('getresendotpRes', resndotpRes);
     })
   }
   // register user
-
 }
